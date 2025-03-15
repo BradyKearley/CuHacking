@@ -26,3 +26,4 @@ func _on_detector_body_exited(body: Node2D) -> void:
 func _on_timer_timeout() -> void:
 	$Timer.wait_time = .3  # Move the player
 	get_tree().change_scene_to_file("res://Levels/level_one.tscn")
+	
