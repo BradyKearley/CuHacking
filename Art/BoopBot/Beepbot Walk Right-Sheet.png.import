@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj1s2551d2mqe"
-path="res://.godot/imported/Beepbot Idle Right-Sheet.png-b8ffd47e82b5495077a9c5e8960f247e.ctex"
+uid="uid://d4k3sp70tujqv"
+path="res://.godot/imported/Beepbot Walk Right-Sheet.png-637770d7c81433951df4b01b41a8fdf7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Beepbot Idle Right-Sheet.png"
-dest_files=["res://.godot/imported/Beepbot Idle Right-Sheet.png-b8ffd47e82b5495077a9c5e8960f247e.ctex"]
+source_file="res://Art/BoopBot/Beepbot Walk Right-Sheet.png"
+dest_files=["res://.godot/imported/Beepbot Walk Right-Sheet.png-637770d7c81433951df4b01b41a8fdf7.ctex"]
 
 [params]
 

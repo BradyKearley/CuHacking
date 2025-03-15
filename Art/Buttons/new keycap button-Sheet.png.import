@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4k3sp70tujqv"
-path="res://.godot/imported/Beepbot Walk Right-Sheet.png-3999d144a1b21c1c96a4860d83f808a6.ctex"
+uid="uid://burefjl17wwuw"
+path="res://.godot/imported/new keycap button-Sheet.png-1a7171d979e38d224ee41ca972a76aad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Beepbot Walk Right-Sheet.png"
-dest_files=["res://.godot/imported/Beepbot Walk Right-Sheet.png-3999d144a1b21c1c96a4860d83f808a6.ctex"]
+source_file="res://Art/Buttons/new keycap button-Sheet.png"
+dest_files=["res://.godot/imported/new keycap button-Sheet.png-1a7171d979e38d224ee41ca972a76aad.ctex"]
 
 [params]
 
