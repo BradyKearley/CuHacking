@@ -4,7 +4,6 @@ extends StaticBody2D
 
 var is_pressed = false
 var old_pos_y
-var is_caps = false # Controls player size
 
 func _ready() -> void:
 	old_pos_y = global_position.y
@@ -14,12 +13,12 @@ func press(body: Node2D) -> void:
 	$AudioStreamPlayer2D.pitch_scale = randf_range(0.8,1.2)
 	$AudioStreamPlayer2D.play()
 	if $Timer.is_stopped():
-		if !is_caps: # Maybe change to another higher quality sprite here so it's not fuzzy
+		if !body.is_caps: # Maybe change to another higher quality sprite here so it's not fuzzy
 			body.scale *= 3;
-			is_caps = true
+			body.is_caps = true
 		else:
 			body.scale /= 3;
-			is_caps = false
+			body.is_caps = false
 	
 	$Timer.start()
 	is_pressed = true
