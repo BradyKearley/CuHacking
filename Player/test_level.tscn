@@ -23,7 +23,7 @@ shape = SubResource("RectangleShape2D_ulb0j")
 position = Vector2(42, 24)
 
 [node name="Player" parent="." instance=ExtResource("2_uxux4")]
-position = Vector2(9, 17)
+position = Vector2(10, 17)
 scale = Vector2(0.5, 0.5)
 
 [node name="Camera2D" type="Camera2D" parent="."]
