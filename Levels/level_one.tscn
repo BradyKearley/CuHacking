@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dr2p5to024mvd"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_pvy0h"]
-[ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Player/tab.tscn" id="2_om7uc"]
+[ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="2_om7uc"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="3_cph7v"]
 
 [node name="LevelOne" type="StaticBody2D"]
