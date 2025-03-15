@@ -42,13 +42,13 @@ shape = SubResource("RectangleShape2D_y7274")
 
 [node name="LeftCollider" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftCollider"]
+[node name="LHitbox" type="CollisionShape2D" parent="LeftCollider"]
 position = Vector2(-4, 0)
 shape = SubResource("RectangleShape2D_ego7h")
 
 [node name="RightCollider" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RightCollider"]
+[node name="RHitbox" type="CollisionShape2D" parent="RightCollider"]
 position = Vector2(4, 0)
 shape = SubResource("RectangleShape2D_2jyye")
 

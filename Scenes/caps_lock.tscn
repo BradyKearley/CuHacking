@@ -73,4 +73,5 @@ sprite_frames = SubResource("SpriteFrames_7125o")
 animation = &"Up"
 
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_exited" from="Hitbox" to="." method="_on_hitbox_body_exited"]
 [connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]

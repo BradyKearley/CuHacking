@@ -30,7 +30,7 @@ shape = SubResource("RectangleShape2D_x5yit")
 position = Vector2(24, 60)
 
 [node name="Player" parent="." instance=ExtResource("2_r62j0")]
-position = Vector2(-29, 56)
+position = Vector2(-80, 20)
 scale = Vector2(0.5, 0.5)
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -44,7 +44,7 @@ position = Vector2(-56, 60)
 position = Vector2(121, 60)
 
 [node name="Box" parent="." instance=ExtResource("5_4koiy")]
-position = Vector2(7, 37)
+position = Vector2(7, 38)
 scale = Vector2(1.01544, 1.00294)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -73,18 +73,21 @@ texture = SubResource("PlaceholderTexture2D_xc404")
 position = Vector2(101, 54)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2(-12, 0)
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_quler")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
-position = Vector2(-12, -4.76837e-07)
+position = Vector2(0.999992, -4.76837e-07)
 scale = Vector2(20, 20)
 texture = SubResource("PlaceholderTexture2D_xc404")
 
 [node name="Box2" parent="." instance=ExtResource("5_4koiy")]
-position = Vector2(-50, 36)
+position = Vector2(-74, 38)
 scale = Vector2(1.03112, 1.00589)
 
 [node name="Box3" parent="." instance=ExtResource("5_4koiy")]
-position = Vector2(128, -12)
+position = Vector2(106, 38)
 scale = Vector2(1.04704, 1.00885)
+
+[node name="CapsLock2" parent="." instance=ExtResource("4_repx2")]
+position = Vector2(82, 60)

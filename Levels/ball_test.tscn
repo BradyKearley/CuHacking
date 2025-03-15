@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://cdt5s5mjwe3u0"]
+
+[ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="1_rbxnc"]
+[ext_resource type="PackedScene" uid="uid://di2ppmsvb0tg6" path="res://Scenes/ball.tscn" id="2_2tkx8"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2tkx8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3qsx"]
+size = Vector2(295, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nsqrl"]
+size = Vector2(149, 9)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_8l206"]
+
+[node name="BallTest" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(34, 77)
+scale = Vector2(273, 25.5)
+texture = SubResource("PlaceholderTexture2D_2tkx8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(33, 77)
+shape = SubResource("RectangleShape2D_i3qsx")
+
+[node name="Player" parent="." instance=ExtResource("1_rbxnc")]
+position = Vector2(-69, 57)
+scale = Vector2(0.5, 0.5)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(34, 13)
+zoom = Vector2(7, 7)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-17, 9)
+rotation = 0.23911
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_nsqrl")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(149, 9)
+texture = SubResource("PlaceholderTexture2D_8l206")
+
+[node name="Ball" parent="." instance=ExtResource("2_2tkx8")]
+position = Vector2(-70, -21)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(134, 30)
+rotation = -0.295325
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("RectangleShape2D_nsqrl")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+scale = Vector2(149, 9)
+texture = SubResource("PlaceholderTexture2D_8l206")

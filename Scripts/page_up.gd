@@ -11,7 +11,6 @@ func press(body: Node2D) -> void:
 	$AudioStreamPlayer2D.play()
 	$AnimatedSprite2D.play("Down")
 	actor = body
-	$Timer.start()
 
 func release() -> void:
 	actor = null
@@ -19,8 +18,12 @@ func release() -> void:
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
 	if !disabled:
-		if body.is_in_group("Player") or body.is_in_group("Movable"):  # Ensure the player is falling onto the button
+		if(body.is_in_group("Movable")):
+			disabled = true
 			press(body)
+		if body.is_in_group("Player") and !disabled:
+			press(body)
+			$Timer.start()
 
 func _on_detector_body_exited(body: Node2D) -> void:
 	if body.is_in_group("Player"):
@@ -34,5 +37,3 @@ func _on_timer_timeout() -> void:
 		if(actor.is_in_group("Player")):
 			actor.velocity.y = -jump_height  # Strong upward push
 			actor.move_and_slide()  # Apply the new velocity
-		if(actor.is_in_group("Movable")):
-			disabled = true
