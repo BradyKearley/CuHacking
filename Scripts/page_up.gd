@@ -4,13 +4,17 @@ extends StaticBody2D
 
 var is_pressed = false
 var old_pos_y
+var jump_height = 300.0
 
 func _ready() -> void:
 	old_pos_y = global_position.y
 
 func press(body: Node2D) -> void:
 	# Change if shift signal 
-	body.global_position.x += 50 # Maybe play an animation here?
+	
+	body.velocity.y = -jump_height  # Strong upward push
+	body.move_and_slide()  # Apply the new velocity
+	
 	is_pressed = true
 	global_position.y = old_pos_y + 5
 
