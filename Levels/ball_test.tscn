@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cdt5s5mjwe3u0"]
+[gd_scene load_steps=8 format=3 uid="uid://cdt5s5mjwe3u0"]
 
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="1_rbxnc"]
 [ext_resource type="PackedScene" uid="uid://di2ppmsvb0tg6" path="res://Scenes/ball.tscn" id="2_2tkx8"]
+[ext_resource type="PackedScene" uid="uid://laulci42g2r1" path="res://Scenes/ctrlz.tscn" id="3_i3qsx"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2tkx8"]
 
@@ -56,3 +57,6 @@ shape = SubResource("RectangleShape2D_nsqrl")
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
 scale = Vector2(149, 9)
 texture = SubResource("PlaceholderTexture2D_8l206")
+
+[node name="CTRLZ" parent="." instance=ExtResource("3_i3qsx")]
+position = Vector2(-88, 60)
