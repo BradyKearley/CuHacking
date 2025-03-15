@@ -1,0 +1,90 @@
+[gd_scene load_steps=10 format=3 uid="uid://do3k6f2hdm6a"]
+
+[ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="1_821wm"]
+[ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_r62j0"]
+[ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="3_jyxac"]
+[ext_resource type="PackedScene" uid="uid://deeboqsgkdrlb" path="res://Scenes/caps_lock.tscn" id="4_repx2"]
+[ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="5_4koiy"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ydj4e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x5yit"]
+size = Vector2(295, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_quler"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_xc404"]
+
+[node name="BoxTestLevel" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(34, 77)
+scale = Vector2(273, 25.5)
+texture = SubResource("PlaceholderTexture2D_ydj4e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(33, 77)
+shape = SubResource("RectangleShape2D_x5yit")
+
+[node name="Tab" parent="." instance=ExtResource("1_821wm")]
+position = Vector2(24, 60)
+
+[node name="Player" parent="." instance=ExtResource("2_r62j0")]
+position = Vector2(-29, 56)
+scale = Vector2(0.5, 0.5)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(34, 13)
+zoom = Vector2(7, 7)
+
+[node name="PageUp" parent="." instance=ExtResource("3_jyxac")]
+position = Vector2(-56, 60)
+
+[node name="CapsLock" parent="." instance=ExtResource("4_repx2")]
+position = Vector2(121, 60)
+
+[node name="Box" parent="." instance=ExtResource("5_4koiy")]
+position = Vector2(7, 37)
+scale = Vector2(1.01544, 1.00294)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(3, 54)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_quler")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -4.76837e-07)
+scale = Vector2(20, 20)
+texture = SubResource("PlaceholderTexture2D_xc404")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-78, 54)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("RectangleShape2D_quler")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(0, -4.76837e-07)
+scale = Vector2(20, 20)
+texture = SubResource("PlaceholderTexture2D_xc404")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(101, 54)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(-12, 0)
+shape = SubResource("RectangleShape2D_quler")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
+position = Vector2(-12, -4.76837e-07)
+scale = Vector2(20, 20)
+texture = SubResource("PlaceholderTexture2D_xc404")
+
+[node name="Box2" parent="." instance=ExtResource("5_4koiy")]
+position = Vector2(-50, 36)
+scale = Vector2(1.03112, 1.00589)
+
+[node name="Box3" parent="." instance=ExtResource("5_4koiy")]
+position = Vector2(128, -12)
+scale = Vector2(1.04704, 1.00885)

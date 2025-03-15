@@ -27,7 +27,7 @@ size = Vector2(4, 10)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2jyye"]
 size = Vector2(4, 10)
 
-[node name="Box" type="RigidBody2D"]
+[node name="Box" type="RigidBody2D" groups=["Movable"]]
 mass = 10.0
 physics_material_override = SubResource("PhysicsMaterial_ego7h")
 lock_rotation = true

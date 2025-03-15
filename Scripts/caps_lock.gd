@@ -1,7 +1,6 @@
 extends StaticBody2D
 
-# Set textures here maybe
-
+var disabled = false
 var is_pressed = false
 var old_pos_y
 
@@ -16,9 +15,13 @@ func press(body: Node2D) -> void:
 		if !body.is_caps: # Maybe change to another higher quality sprite here so it's not fuzzy
 			body.scale *= 3;
 			body.is_caps = true
+			if body.is_in_group("Movable"):
+				disabled = true
 		else:
 			body.scale /= 3;
 			body.is_caps = false
+			if body.is_in_group("Movable"):
+				disabled = true
 	
 	$Timer.start()
 	is_pressed = true
@@ -29,9 +32,10 @@ func release() -> void:
 	$AnimatedSprite2D.play("Up")
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
-	if body.is_in_group("Player"):  # Ensure the player is falling onto the button
+	if body.is_in_group("Player") or body.is_in_group("Movable"): # Ensure the player is falling onto the button
 		press(body)
 
 func _on_detector_body_exited(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		release()
+		disabled = false

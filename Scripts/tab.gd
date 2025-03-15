@@ -15,11 +15,11 @@ func release() -> void:
 	player = null
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
-	if body.is_in_group("Player"):  # Ensure the player is falling onto the button
+	if body.is_in_group("Player") or body.is_in_group("Movable"):  # Ensure the player is falling onto the button
 		press(body)
 
 func _on_detector_body_exited(body: Node2D) -> void:
-	if body.is_in_group("Player"):
+	if body.is_in_group("Player") or body.is_in_group("Movable"):
 		release()
 	
 
