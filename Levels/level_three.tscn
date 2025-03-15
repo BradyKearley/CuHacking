@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dg8y4y0gt73ln"]
+[gd_scene load_steps=16 format=3 uid="uid://dg8y4y0gt73ln"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_2kwn0"]
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_kkbwx"]
@@ -9,7 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="6_1y2jm"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="7_kkbwx"]
 [ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="9_oqbxi"]
+[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="9_rqt54"]
+[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="10_21lly"]
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="10_svaqi"]
+[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="11_g6cyn"]
 [ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="11_svaqi"]
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="12_v5eo1"]
 
@@ -34,10 +37,6 @@ texture = ExtResource("1_2kwn0")
 [node name="Player" parent="." instance=ExtResource("2_a1fw5")]
 position = Vector2(-42, 51)
 scale = Vector2(0.5, 0.5)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(34, 13)
-zoom = Vector2(7, 7)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-48, 59, -48, -33, 116, -33, 116, 60, 122, 60, 121, -39, -48, -39, -60, -39, -59, 59)
@@ -86,26 +85,6 @@ position = Vector2(16, 13)
 position = Vector2(-6, 46.0078)
 scale = Vector2(0.271605, 0.448546)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
-
-[node name="TopBar" type="Sprite2D" parent="."]
-position = Vector2(35.5, -36.006)
-scale = Vector2(0.172553, 0.166333)
-texture = ExtResource("5_ch07b")
-
-[node name="Screenshot2025-03-15005557" type="Sprite2D" parent="TopBar"]
-position = Vector2(480.65, 297.631)
-scale = Vector2(0.9581, 0.980909)
-texture = ExtResource("6_1y2jm")
-
-[node name="Screenshot2025-03-15005637" type="Sprite2D" parent="TopBar"]
-position = Vector2(4.57764e-05, 577.942)
-scale = Vector2(0.792166, 1.169)
-texture = ExtResource("7_kkbwx")
-
-[node name="Screenshot2025-03-15005638" type="Sprite2D" parent="TopBar"]
-position = Vector2(-488.709, 300.637)
-scale = Vector2(0.0108565, 62.7923)
-texture = ExtResource("7_kkbwx")
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -4
@@ -182,3 +161,72 @@ scale = Vector2(1.25, 1)
 [node name="Spike3" parent="." instance=ExtResource("12_v5eo1")]
 position = Vector2(75.122, 55.6092)
 scale = Vector2(1.2, 1)
+
+[node name="TopBar2" type="Sprite2D" parent="."]
+position = Vector2(35.5, -36.006)
+scale = Vector2(0.172553, 0.166333)
+texture = ExtResource("5_ch07b")
+
+[node name="Screenshot2025-03-15005557" type="Sprite2D" parent="TopBar2"]
+position = Vector2(480.65, 297.631)
+scale = Vector2(0.9581, 0.980909)
+texture = ExtResource("6_1y2jm")
+
+[node name="Screenshot2025-03-15005637" type="Sprite2D" parent="TopBar2"]
+position = Vector2(4.57764e-05, 577.942)
+scale = Vector2(0.792166, 1.169)
+texture = ExtResource("7_kkbwx")
+
+[node name="Screenshot2025-03-15005638" type="Sprite2D" parent="TopBar2"]
+position = Vector2(-488.709, 300.637)
+scale = Vector2(0.0108565, 62.7923)
+texture = ExtResource("7_kkbwx")
+
+[node name="Node2D" type="Node2D" parent="TopBar2"]
+position = Vector2(469.084, -16.7924)
+scale = Vector2(0.418795, 0.40766)
+
+[node name="XButton" type="Button" parent="TopBar2/Node2D"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.973
+anchor_right = 0.996
+anchor_bottom = 0.87
+offset_right = 132.0
+offset_bottom = 182.0
+scale = Vector2(0.418794, 0.40766)
+script = ExtResource("9_rqt54")
+
+[node name="-Button" type="Button" parent="TopBar2/Node2D"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.973
+anchor_right = 0.996
+anchor_bottom = 0.87
+offset_left = -126.0
+offset_right = 12.0
+offset_bottom = 175.0
+scale = Vector2(0.418794, 0.40766)
+script = ExtResource("10_21lly")
+
+[node name="BigButton" type="Button" parent="TopBar2/Node2D"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.973
+anchor_right = 0.996
+anchor_bottom = 0.87
+offset_left = -66.0
+offset_right = 67.0
+offset_bottom = 181.0
+scale = Vector2(0.418794, 0.40766)
+toggle_mode = true
+script = ExtResource("11_g6cyn")
+
+[node name="Camera2D" type="Camera2D" parent="TopBar2/Node2D/BigButton"]
+position = Vector2(-2566.51, 1873.91)
+scale = Vector2(33.0427, 36.1765)
+zoom = Vector2(7, 7)
+
+[connection signal="pressed" from="TopBar2/Node2D/XButton" to="TopBar2/Node2D/XButton" method="_on_pressed"]
+[connection signal="pressed" from="TopBar2/Node2D/-Button" to="TopBar2/Node2D/-Button" method="_on_pressed"]
+[connection signal="toggled" from="TopBar2/Node2D/BigButton" to="TopBar2/Node2D/BigButton" method="_on_toggled"]

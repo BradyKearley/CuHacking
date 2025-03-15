@@ -7,7 +7,9 @@ func _ready() -> void:
 func press(body: Node2D) -> void:
 	# Change if shift signal 
 	actor = body
+	$AudioStreamPlayer2D.play()
 	$Timer.start()
+
 	# test
 
 func release() -> void:

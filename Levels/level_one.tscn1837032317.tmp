@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=11 format=3 uid="uid://dr2p5to024mvd"]
-=======
-[gd_scene load_steps=15 format=3 uid="uid://dr2p5to024mvd"]
->>>>>>> Stashed changes
+[gd_scene load_steps=14 format=3 uid="uid://dr2p5to024mvd"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_pvy0h"]
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_ya8ts"]
@@ -15,11 +11,15 @@
 [ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="8_lhaxc"]
 [ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="9_5fkoe"]
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="9_kmyb2"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="10_2py18"]
 [ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="10_kmyb2"]
+[ext_resource type="PackedScene" uid="uid://wnjb8la2srov" path="res://Levels/level_two.tscn" id="11_y30io"]
 
-[node name="LevelOne2" type="StaticBody2D"]
+[node name="LevelOne" type="StaticBody2D"]
 script = ExtResource("1_ya8ts")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(34, 13)
+zoom = Vector2(7, 7)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-20.5063, 59.0313)
@@ -81,50 +81,45 @@ position = Vector2(-488.709, 300.637)
 scale = Vector2(0.0108565, 62.7923)
 texture = ExtResource("6_ya8ts")
 
-[node name="Node2D" type="Node2D" parent="TopBar2"]
-position = Vector2(469.084, -16.7924)
-scale = Vector2(0.418795, 0.40766)
-
-[node name="XButton" type="Button" parent="TopBar2/Node2D"]
+[node name="XButton" type="Button" parent="TopBar2"]
 modulate = Color(1, 1, 1, 0)
 anchors_preset = -1
 anchor_left = 0.973
 anchor_right = 0.996
 anchor_bottom = 0.87
-offset_right = 132.0
-offset_bottom = 182.0
+offset_left = -495.159
+offset_top = -16.7924
+offset_right = -463.952
+offset_bottom = 25.8876
 scale = Vector2(0.418794, 0.40766)
 script = ExtResource("8_lhaxc")
 
-[node name="-Button" type="Button" parent="TopBar2/Node2D"]
+[node name="-Button" type="Button" parent="TopBar2"]
 modulate = Color(1, 1, 1, 0)
 anchors_preset = -1
 anchor_left = 0.973
 anchor_right = 0.996
 anchor_bottom = 0.87
-offset_left = -126.0
-offset_right = 12.0
-offset_bottom = 175.0
+offset_left = -547.842
+offset_top = -16.7924
+offset_right = -516.635
+offset_bottom = 25.8876
 scale = Vector2(0.418794, 0.40766)
 script = ExtResource("9_5fkoe")
 
-[node name="BigButton" type="Button" parent="TopBar2/Node2D"]
+[node name="-Button2" type="Button" parent="TopBar2"]
 modulate = Color(1, 1, 1, 0)
 anchors_preset = -1
 anchor_left = 0.973
 anchor_right = 0.996
 anchor_bottom = 0.87
-offset_left = -66.0
-offset_right = 67.0
-offset_bottom = 181.0
+offset_left = -522.924
+offset_top = -16.7924
+offset_right = -491.717
+offset_bottom = 25.8876
 scale = Vector2(0.418794, 0.40766)
 toggle_mode = true
-script = ExtResource("10_2py18")
-
-[node name="Camera2D" type="Camera2D" parent="TopBar2/Node2D/BigButton"]
-position = Vector2(-1074.54, 763.917)
-scale = Vector2(13.8381, 14.7477)
-zoom = Vector2(7, 7)
+script = ExtResource("9_5fkoe")
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -4
@@ -157,11 +152,10 @@ texture = ExtResource("1_pvy0h")
 [node name="Enter_Key" parent="." instance=ExtResource("10_kmyb2")]
 position = Vector2(92, 52)
 scale = Vector2(0.1, 0.1)
-<<<<<<< Updated upstream
-=======
 next_level = ExtResource("11_y30io")
 
-[connection signal="pressed" from="TopBar2/Node2D/XButton" to="TopBar2/Node2D/XButton" method="_on_pressed"]
-[connection signal="pressed" from="TopBar2/Node2D/-Button" to="TopBar2/Node2D/-Button" method="_on_pressed"]
-[connection signal="toggled" from="TopBar2/Node2D/BigButton" to="TopBar2/Node2D/BigButton" method="_on_toggled"]
->>>>>>> Stashed changes
+[connection signal="pressed" from="TopBar2/XButton" to="TopBar2/XButton" method="_on_pressed"]
+[connection signal="pressed" from="TopBar2/-Button" to="TopBar2/-Button" method="_on_pressed"]
+[connection signal="button_down" from="TopBar2/-Button2" to="TopBar2/-Button2" method="_on_button_down"]
+[connection signal="button_up" from="TopBar2/-Button2" to="TopBar2/-Button2" method="_on_button_up"]
+[connection signal="pressed" from="TopBar2/-Button2" to="TopBar2/-Button2" method="_on_pressed"]
