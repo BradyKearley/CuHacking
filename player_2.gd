@@ -22,10 +22,10 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 	
 	# Handle jump.
-	if Input.is_action_just_pressed("Jump") and is_on_floor():
+	if Input.is_action_just_pressed("Player2Jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		$AudioStreamPlayer2D.play()
-	var direction := Input.get_axis("Left", "Right")
+	var direction := Input.get_axis("Player2Left", "Player2Right")
 	if direction:
 		velocity.x = direction * SPEED
 		if direction > 0:
