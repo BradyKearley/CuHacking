@@ -5,10 +5,10 @@
 [ext_resource type="AudioStream" uid="uid://cosc81evi4ud" path="res://SFX/spacebar-click-keyboard-199448_iju6vpxH.mp3" id="3_o0s7b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qlhtt"]
-size = Vector2(16, 6)
+size = Vector2(16, 7)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o0s7b"]
-size = Vector2(16, 9.875)
+size = Vector2(16, 8.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cfox7"]
 size = Vector2(16, 25)
@@ -44,12 +44,13 @@ animations = [{
 script = ExtResource("1_qlhtt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_qlhtt")
 
 [node name="Hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(0, -1.0625)
+position = Vector2(0, -0.5625)
 shape = SubResource("RectangleShape2D_o0s7b")
 
 [node name="Detector" type="Area2D" parent="."]
