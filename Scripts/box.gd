@@ -5,19 +5,21 @@ var push_force = 50  # Adjust to control push strength
 		
 func change_size() -> void:
 	if is_caps:
-		$AnimatedSprite2D.scale /= 3
-		$CollisionShape2D.scale /= 3
-		$LeftCollider/LHitbox.scale /= 3
+		$AnimatedSprite2D.scale /= 2.5
+		$CollisionShape2D.scale /= 2.5
+		$LeftCollider/LHitbox.scale /= 2.5
 		$LeftCollider/LHitbox.global_position.x += 8
-		$RightCollider/RHitbox.scale /= 3
+		$RightCollider/RHitbox.scale /= 2.5
 		$RightCollider/RHitbox.global_position.x -= 8
+		$CollisionShape2D.global_position.y -=2
 		is_caps = false
 	else: 
-		$AnimatedSprite2D.scale *= 3
-		$CollisionShape2D.scale *= 3
-		$LeftCollider/LHitbox.scale *= 3
+		$AnimatedSprite2D.scale *= 2.5
+		$CollisionShape2D.scale *= 2.5
+		$LeftCollider/LHitbox.scale *= 2.5
 		$LeftCollider/LHitbox.global_position.x -= 8
-		$RightCollider/RHitbox.scale *= 3
+		$CollisionShape2D.global_position.y +=2
+		$RightCollider/RHitbox.scale *= 2.5
 		$RightCollider/RHitbox.global_position.x += 8
 		is_caps = true
 		

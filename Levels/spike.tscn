@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://ba6r008emkcmn" path="res://SFX/explosion (2).wav" id="3_s607c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0pquk"]
-size = Vector2(23, 3)
+size = Vector2(23, 0)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fb30k"]
 size = Vector2(23, 5.875)
@@ -50,7 +50,7 @@ animations = [{
 script = ExtResource("1_s607c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 1.5)
+position = Vector2(0.5, 3)
 shape = SubResource("RectangleShape2D_0pquk")
 
 [node name="Hitbox" type="Area2D" parent="."]
