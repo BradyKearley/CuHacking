@@ -26,4 +26,4 @@ func _on_detector_body_exited(body: Node2D) -> void:
 func _on_timer_timeout() -> void:
 	$Timer.wait_time = .05  # Move the player
 	if(player):
-		player.global_position.y += 10 # Maybe play an animation here?
+		player.global_position.y += 17 # Maybe play an animation here?
