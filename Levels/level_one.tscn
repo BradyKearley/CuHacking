@@ -1,19 +1,21 @@
-[gd_scene load_steps=8 format=3 uid="uid://dr2p5to024mvd"]
+[gd_scene load_steps=10 format=3 uid="uid://dr2p5to024mvd"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_pvy0h"]
-[ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_ya8ts"]
+[ext_resource type="Script" path="res://Scripts/level.gd" id="1_ya8ts"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="2_om7uc"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="3_cph7v"]
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="4_om7uc"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="5_ugpc4"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="6_ya8ts"]
+[ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="8_2848f"]
+[ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="9_kmyb2"]
 
 [node name="LevelOne" type="StaticBody2D"]
 script = ExtResource("1_ya8ts")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(34, 59)
-scale = Vector2(2.02469, 0.0366385)
+position = Vector2(-20.5063, 59.0313)
+scale = Vector2(0.687, 0.02)
 texture = ExtResource("1_pvy0h")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
@@ -27,8 +29,8 @@ scale = Vector2(2.02469, 0.0366385)
 texture = ExtResource("1_pvy0h")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(18, 38.0156)
-scale = Vector2(0.271605, 0.724677)
+position = Vector2(7, 38)
+scale = Vector2(-0.00839499, 0.724677)
 texture = ExtResource("1_pvy0h")
 
 [node name="Player" parent="." instance=ExtResource("3_cph7v")]
@@ -43,8 +45,8 @@ zoom = Vector2(7, 7)
 polygon = PackedVector2Array(-48, 59, -48, -33, 116, -33, 116, 60, 122, 60, 121, -39, -48, -39, -60, -39, -59, 59)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
-position = Vector2(34, 59)
-scale = Vector2(2.02469, 0.0366385)
+position = Vector2(34, 59.35)
+scale = Vector2(2.02469, 0.0290951)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
@@ -74,3 +76,31 @@ texture = ExtResource("6_ya8ts")
 position = Vector2(-488.709, 300.637)
 scale = Vector2(0.0108565, 62.7923)
 texture = ExtResource("6_ya8ts")
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -4
+position = Vector2(35, 10.5)
+scale = Vector2(0.521739, 0.276353)
+texture = ExtResource("8_2848f")
+
+[node name="Wp9532787-windows-old-wallpapers" type="Sprite2D" parent="Background"]
+z_index = -5
+position = Vector2(-1.91666, 10.9689)
+scale = Vector2(0.273524, 0.521354)
+texture = ExtResource("9_kmyb2")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(29, 38)
+scale = Vector2(-0.00839499, 0.724677)
+texture = ExtResource("1_pvy0h")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(18, 17)
+rotation = 1.5708
+scale = Vector2(-0.008, 0.390295)
+texture = ExtResource("1_pvy0h")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(72.338, 59.031)
+scale = Vector2(1.078, 0.01)
+texture = ExtResource("1_pvy0h")
