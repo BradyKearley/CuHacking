@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 AudioPlayer="*res://SFX/audio_player.tscn"
+Shiftvariable="*res://Scenes/shiftvariable.tscn"
 
 [display]
 
