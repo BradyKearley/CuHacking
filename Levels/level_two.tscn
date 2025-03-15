@@ -33,16 +33,6 @@ position = Vector2(7, 38)
 scale = Vector2(-0.00839499, 0.724677)
 texture = ExtResource("1_f4581")
 
-[node name="Sprite2D5" type="Sprite2D" parent="Sprite2D2"]
-position = Vector2(-2620.61, 0)
-texture = ExtResource("1_f4581")
-
-[node name="Sprite2D6" type="Sprite2D" parent="Sprite2D2"]
-position = Vector2(-1310.31, -28.9784)
-rotation = -1.5708
-scale = Vector2(0.0110394, 46.4914)
-texture = ExtResource("1_f4581")
-
 [node name="Player" parent="." instance=ExtResource("2_bsuut")]
 position = Vector2(-36, 45)
 scale = Vector2(0.5, 0.5)
@@ -103,3 +93,16 @@ position = Vector2(-5, 55)
 position = Vector2(18, 38.0156)
 scale = Vector2(0.271605, 0.724677)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(29, 38)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.724677)
+texture = ExtResource("1_f4581")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(18, 17)
+rotation = -1.5708
+scale = Vector2(0.008, -0.390295)
+skew = 0.0003227
+texture = ExtResource("1_f4581")
