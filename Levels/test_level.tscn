@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://v41b1woaa6q8"]
+[gd_scene load_steps=9 format=3 uid="uid://v41b1woaa6q8"]
 
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="1_i4ak4"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_3158n"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="3_ub4j8"]
 [ext_resource type="PackedScene" uid="uid://deeboqsgkdrlb" path="res://Scenes/caps_lock.tscn" id="4_pvdih"]
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="5_3158n"]
+[ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="6_ub4j8"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vukl2"]
 
@@ -42,3 +43,6 @@ position = Vector2(96, 24)
 [node name="Box" parent="." instance=ExtResource("5_3158n")]
 position = Vector2(30, -7)
 scale = Vector2(1.01544, 1.00294)
+
+[node name="Spike" parent="." instance=ExtResource("6_ub4j8")]
+position = Vector2(40, 18)

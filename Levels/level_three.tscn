@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dg8y4y0gt73ln"]
+[gd_scene load_steps=13 format=3 uid="uid://dg8y4y0gt73ln"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_2kwn0"]
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_kkbwx"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="9_oqbxi"]
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="10_svaqi"]
 [ext_resource type="PackedScene" path="res://Scenes/enter_key.tscn" id="11_svaqi"]
+[ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="12_v5eo1"]
 
 [node name="LevelThree" type="StaticBody2D"]
 script = ExtResource("1_kkbwx")
@@ -169,3 +170,15 @@ texture = ExtResource("1_2kwn0")
 [node name="Node2D" parent="." instance=ExtResource("11_svaqi")]
 position = Vector2(101.348, 0.675655)
 scale = Vector2(0.1, 0.1)
+
+[node name="Spike" parent="." instance=ExtResource("12_v5eo1")]
+position = Vector2(18.685, 55.609)
+scale = Vector2(1.25, 1)
+
+[node name="Spike2" parent="." instance=ExtResource("12_v5eo1")]
+position = Vector2(48.021, 55.609)
+scale = Vector2(1.25, 1)
+
+[node name="Spike3" parent="." instance=ExtResource("12_v5eo1")]
+position = Vector2(75.122, 55.6092)
+scale = Vector2(1.2, 1)
