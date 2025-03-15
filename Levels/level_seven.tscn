@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="8_v0vgt"]
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="9_hda3h"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="10_4ekwb"]
-[ext_resource type="PackedScene" path="res://Levels/spike.tscn" id="11_4ekwb"]
+[ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="11_4ekwb"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="12_hgi5x"]
 [ext_resource type="PackedScene" uid="uid://b4nfsi88uoetg" path="res://Scenes/shift.tscn" id="13_bxjvh"]
 
@@ -100,7 +100,7 @@ position = Vector2(-26, 50)
 scale = Vector2(0.1, 0.1)
 
 [node name="Tab" parent="." instance=ExtResource("10_4ekwb")]
-position = Vector2(10, 46)
+position = Vector2(12, 46)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(34.5, 33)
@@ -136,7 +136,7 @@ scale = Vector2(0.185438, -0.33847)
 texture = ExtResource("1_e4eo7")
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="."]
-position = Vector2(92, -1)
+position = Vector2(86, 4)
 shape = SubResource("RectangleShape2D_hgi5x")
 
 [node name="Sprite2D11" type="Sprite2D" parent="CollisionShape2D8"]
@@ -161,7 +161,7 @@ position = Vector2(13, 55)
 position = Vector2(38, 55)
 
 [node name="Box" parent="." instance=ExtResource("9_hda3h")]
-position = Vector2(87, -8)
+position = Vector2(81, -3)
 
 [node name="Box4" parent="." instance=ExtResource("9_hda3h")]
 position = Vector2(-10, 23)
@@ -223,7 +223,7 @@ scale = Vector2(0.0281077, -0.815854)
 texture = ExtResource("1_e4eo7")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="."]
-position = Vector2(21.5, 1.5)
+position = Vector2(8, 2)
 shape = SubResource("RectangleShape2D_v0vgt")
 
 [node name="Sprite2D11" type="Sprite2D" parent="CollisionShape2D10"]
@@ -231,3 +231,9 @@ position = Vector2(0.122846, 0.184268)
 rotation = 1.5708
 scale = Vector2(0.0281077, -0.815854)
 texture = ExtResource("1_e4eo7")
+
+[node name="Box2" parent="." instance=ExtResource("9_hda3h")]
+position = Vector2(81, -15)
+
+[node name="Box6" parent="." instance=ExtResource("9_hda3h")]
+position = Vector2(81, -26)
