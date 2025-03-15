@@ -167,6 +167,6 @@ scale = Vector2(0.154297, 0.154297)
 sprite_frames = SubResource("SpriteFrames_gwnis")
 animation = &"walkLeft"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Player"]]
 position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_k53q1")

@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://dr2p5to024mvd"]
+[gd_scene load_steps=12 format=3 uid="uid://dr2p5to024mvd"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_pvy0h"]
-[ext_resource type="Script" path="res://Scripts/level.gd" id="1_ya8ts"]
+[ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_ya8ts"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="2_om7uc"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="3_cph7v"]
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="4_om7uc"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="6_ya8ts"]
 [ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="8_2848f"]
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="9_kmyb2"]
+[ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="10_kmyb2"]
+[ext_resource type="PackedScene" uid="uid://f50u66xwhp5v" path="res://Levels/level_two.tscn" id="11_y30io"]
 
 [node name="LevelOne" type="StaticBody2D"]
 script = ExtResource("1_ya8ts")
@@ -104,3 +106,8 @@ texture = ExtResource("1_pvy0h")
 position = Vector2(72.338, 59.031)
 scale = Vector2(1.078, 0.01)
 texture = ExtResource("1_pvy0h")
+
+[node name="Enter_Key" parent="." instance=ExtResource("10_kmyb2")]
+position = Vector2(92, 52)
+scale = Vector2(0.1, 0.1)
+next_level = ExtResource("11_y30io")
