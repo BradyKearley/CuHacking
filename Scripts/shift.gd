@@ -19,6 +19,7 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 		if body.is_in_group("Movable"):
 			disabled = true
 			press(body)
+			$Timer.start()
 		if body.is_in_group("Player"):
 			press(body)
 			$Timer.start()
