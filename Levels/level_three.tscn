@@ -1,0 +1,122 @@
+[gd_scene load_steps=8 format=3 uid="uid://dg8y4y0gt73ln"]
+
+[ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_2kwn0"]
+[ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_a1fw5"]
+[ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="3_ch07b"]
+[ext_resource type="PackedScene" uid="uid://bjxkrkvfm1oal" path="res://Scenes/pg_down.tscn" id="5_a1fw5"]
+[ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="5_ch07b"]
+[ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="6_1y2jm"]
+[ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="7_kkbwx"]
+
+[node name="LevelThree" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(34, 59)
+scale = Vector2(2.02469, 0.0366385)
+texture = ExtResource("1_2kwn0")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(34, -34)
+scale = Vector2(2.02469, 0.0366385)
+texture = ExtResource("1_2kwn0")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(16, 18)
+scale = Vector2(0.197531, 0.0366385)
+texture = ExtResource("1_2kwn0")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(57, 51)
+scale = Vector2(0.197531, 0.0366385)
+texture = ExtResource("1_2kwn0")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(76, 30)
+scale = Vector2(0.197531, 0.0366385)
+texture = ExtResource("1_2kwn0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-6, 46.0078)
+scale = Vector2(0.271605, 0.448546)
+texture = ExtResource("1_2kwn0")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(102.5, 33.2539)
+scale = Vector2(0.333333, 0.905307)
+texture = ExtResource("1_2kwn0")
+
+[node name="Player" parent="." instance=ExtResource("2_a1fw5")]
+position = Vector2(-42, 51)
+scale = Vector2(0.5, 0.5)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(34, 13)
+zoom = Vector2(7, 7)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-48, 59, -48, -33, 116, -33, 116, 60, 122, 60, 121, -39, -48, -39, -60, -39, -59, 59)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+position = Vector2(34, 59)
+scale = Vector2(2.02469, 0.0366385)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="PageUp" parent="." instance=ExtResource("3_ch07b")]
+position = Vector2(-26, 54)
+
+[node name="PageUp4" parent="." instance=ExtResource("3_ch07b")]
+position = Vector2(76, 25)
+
+[node name="PageUp3" parent="." instance=ExtResource("3_ch07b")]
+position = Vector2(57, 46)
+
+[node name="PageUp2" parent="." instance=ExtResource("3_ch07b")]
+position = Vector2(-6, 29)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
+position = Vector2(102.5, 33.2539)
+scale = Vector2(0.333333, 0.905307)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="."]
+position = Vector2(76, 30)
+scale = Vector2(0.197531, 0.0366385)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="."]
+position = Vector2(57, 51)
+scale = Vector2(0.197531, 0.0366385)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="."]
+position = Vector2(16, 18)
+scale = Vector2(0.197531, 0.0366385)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="PgDown" parent="." instance=ExtResource("5_a1fw5")]
+position = Vector2(16, 13)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
+position = Vector2(-6, 46.0078)
+scale = Vector2(0.271605, 0.448546)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="TopBar" type="Sprite2D" parent="."]
+position = Vector2(35.5, -36.006)
+scale = Vector2(0.172553, 0.166333)
+texture = ExtResource("5_ch07b")
+
+[node name="Screenshot2025-03-15005557" type="Sprite2D" parent="TopBar"]
+position = Vector2(480.65, 297.631)
+scale = Vector2(0.9581, 0.980909)
+texture = ExtResource("6_1y2jm")
+
+[node name="Screenshot2025-03-15005637" type="Sprite2D" parent="TopBar"]
+position = Vector2(4.57764e-05, 577.942)
+scale = Vector2(0.792166, 1.169)
+texture = ExtResource("7_kkbwx")
+
+[node name="Screenshot2025-03-15005638" type="Sprite2D" parent="TopBar"]
+position = Vector2(-488.709, 300.637)
+scale = Vector2(0.0108565, 62.7923)
+texture = ExtResource("7_kkbwx")

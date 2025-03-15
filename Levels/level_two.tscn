@@ -1,35 +1,35 @@
-[gd_scene load_steps=7 format=3 uid="uid://dr2p5to024mvd"]
+[gd_scene load_steps=7 format=3 uid="uid://ueaxs4h4mved"]
 
-[ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_pvy0h"]
-[ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="2_om7uc"]
-[ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="3_cph7v"]
-[ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="4_om7uc"]
-[ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="5_ugpc4"]
-[ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="6_ya8ts"]
+[ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_f4581"]
+[ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_bsuut"]
+[ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="3_kiou0"]
+[ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="4_bsuut"]
+[ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="5_w8nlk"]
+[ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="6_knhb2"]
 
-[node name="LevelOne" type="StaticBody2D"]
+[node name="LevelTwo" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(34, 59)
 scale = Vector2(2.02469, 0.0366385)
-texture = ExtResource("1_pvy0h")
+texture = ExtResource("1_f4581")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
 position = Vector2(34, -34)
 scale = Vector2(2.02469, 0.0366385)
-texture = ExtResource("1_pvy0h")
+texture = ExtResource("1_f4581")
 
 [node name="Sprite2D4" type="Sprite2D" parent="."]
 position = Vector2(34, -34)
 scale = Vector2(2.02469, 0.0366385)
-texture = ExtResource("1_pvy0h")
+texture = ExtResource("1_f4581")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(18, 38.0156)
 scale = Vector2(0.271605, 0.724677)
-texture = ExtResource("1_pvy0h")
+texture = ExtResource("1_f4581")
 
-[node name="Player" parent="." instance=ExtResource("3_cph7v")]
+[node name="Player" parent="." instance=ExtResource("2_bsuut")]
 position = Vector2(-36, 45)
 scale = Vector2(0.5, 0.5)
 
@@ -50,25 +50,25 @@ position = Vector2(18, 38.0156)
 scale = Vector2(0.271605, 0.724677)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
-[node name="Tab" parent="." instance=ExtResource("2_om7uc")]
-position = Vector2(-3, 54)
+[node name="PageUp" parent="." instance=ExtResource("3_kiou0")]
+position = Vector2(-6, 54)
 
-[node name="TopBar2" type="Sprite2D" parent="."]
+[node name="TopBar" type="Sprite2D" parent="."]
 position = Vector2(35.5, -36.006)
 scale = Vector2(0.172553, 0.166333)
-texture = ExtResource("4_om7uc")
+texture = ExtResource("4_bsuut")
 
-[node name="Screenshot2025-03-15005557" type="Sprite2D" parent="TopBar2"]
+[node name="Screenshot2025-03-15005557" type="Sprite2D" parent="TopBar"]
 position = Vector2(480.65, 297.631)
 scale = Vector2(0.9581, 0.980909)
-texture = ExtResource("5_ugpc4")
+texture = ExtResource("5_w8nlk")
 
-[node name="Screenshot2025-03-15005637" type="Sprite2D" parent="TopBar2"]
+[node name="Screenshot2025-03-15005637" type="Sprite2D" parent="TopBar"]
 position = Vector2(4.57764e-05, 577.942)
 scale = Vector2(0.792166, 1.169)
-texture = ExtResource("6_ya8ts")
+texture = ExtResource("6_knhb2")
 
-[node name="Screenshot2025-03-15005638" type="Sprite2D" parent="TopBar2"]
+[node name="Screenshot2025-03-15005638" type="Sprite2D" parent="TopBar"]
 position = Vector2(-488.709, 300.637)
 scale = Vector2(0.0108565, 62.7923)
-texture = ExtResource("6_ya8ts")
+texture = ExtResource("6_knhb2")
