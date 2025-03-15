@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj1s2551d2mqe"
-path="res://.godot/imported/Beepbot Idle Right-Sheet.png-b8ffd47e82b5495077a9c5e8960f247e.ctex"
+uid="uid://burefjl17wwuw"
+path="res://.godot/imported/new keycap button-Sheet.png-1a7171d979e38d224ee41ca972a76aad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Beepbot Idle Right-Sheet.png"
-dest_files=["res://.godot/imported/Beepbot Idle Right-Sheet.png-b8ffd47e82b5495077a9c5e8960f247e.ctex"]
+source_file="res://Art/Buttons/new keycap button-Sheet.png"
+dest_files=["res://.godot/imported/new keycap button-Sheet.png-1a7171d979e38d224ee41ca972a76aad.ctex"]
 
 [params]
 

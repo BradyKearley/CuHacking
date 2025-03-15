@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blk6862phy125"
-path="res://.godot/imported/Beepbot Idle Left-Sheet.png-b326a34eb24ab93162e5fff1319664d2.ctex"
+uid="uid://dndurwey7ik4a"
+path="res://.godot/imported/Beepbot Walk Left-Sheet.png-c9922b133d005c72c1fd35ac0360ffc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Beepbot Idle Left-Sheet.png"
-dest_files=["res://.godot/imported/Beepbot Idle Left-Sheet.png-b326a34eb24ab93162e5fff1319664d2.ctex"]
+source_file="res://Art/BoopBot/Beepbot Walk Left-Sheet.png"
+dest_files=["res://.godot/imported/Beepbot Walk Left-Sheet.png-c9922b133d005c72c1fd35ac0360ffc3.ctex"]
 
 [params]
 

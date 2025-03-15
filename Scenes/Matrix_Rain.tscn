@@ -1,0 +1,114 @@
+[gd_scene load_steps=17 format=3 uid="uid://brdt52x23nygv"]
+
+[ext_resource type="Shader" uid="uid://dyallvgpnxbba" path="res://Scenes/Matrix_Rain.gdshader" id="1_7uuas"]
+[ext_resource type="Texture2D" uid="uid://0ljru8eie45v" path="res://Art/Other/characters.png" id="2_t3u85"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_7uuas"]
+noise_type = 0
+seed = 200
+frequency = 0.0172
+offset = Vector3(0, 491.02, 0)
+fractal_octaves = 10
+metadata/_preview_in_3d_space_ = true
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_t3u85"]
+width = 32
+height = 32
+noise = SubResource("FastNoiseLite_7uuas")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t3u85"]
+shader = ExtResource("1_7uuas")
+shader_parameter/noise_tex = SubResource("NoiseTexture2D_t3u85")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ahue"]
+atlas = ExtResource("2_t3u85")
+region = Rect2(0, 0, 82, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qccys"]
+atlas = ExtResource("2_t3u85")
+region = Rect2(82, 0, 82, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qps4f"]
+atlas = ExtResource("2_t3u85")
+region = Rect2(164, 0, 82, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hc6h"]
+atlas = ExtResource("2_t3u85")
+region = Rect2(246, 0, 82, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avsog"]
+atlas = ExtResource("2_t3u85")
+region = Rect2(328, 0, 82, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rpurq"]
+atlas = ExtResource("2_t3u85")
+region = Rect2(410, 0, 82, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1rl6"]
+atlas = ExtResource("2_t3u85")
+region = Rect2(492, 0, 82, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kq1th"]
+atlas = ExtResource("2_t3u85")
+region = Rect2(574, 0, 82, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gy23k"]
+atlas = ExtResource("2_t3u85")
+region = Rect2(656, 0, 82, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrv5g"]
+atlas = ExtResource("2_t3u85")
+region = Rect2(738, 0, 82, 110)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k4eue"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ahue")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qccys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qps4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hc6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avsog")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rpurq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1rl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kq1th")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gy23k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrv5g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="MatrixRain" type="Node2D"]
+
+[node name="Matrix Visual Shader" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Matrix" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_t3u85")
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_k4eue")
+frame_progress = 0.557946

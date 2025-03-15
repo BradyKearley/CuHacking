@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4k3sp70tujqv"
-path="res://.godot/imported/Beepbot Walk Right-Sheet.png-3999d144a1b21c1c96a4860d83f808a6.ctex"
+uid="uid://5jvlwht4q1l0"
+path="res://.godot/imported/enter key.png-86dad9f900ea35f569768e7567527ef4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Beepbot Walk Right-Sheet.png"
-dest_files=["res://.godot/imported/Beepbot Walk Right-Sheet.png-3999d144a1b21c1c96a4860d83f808a6.ctex"]
+source_file="res://Art/Buttons/enter key.png"
+dest_files=["res://.godot/imported/enter key.png-86dad9f900ea35f569768e7567527ef4.ctex"]
 
 [params]
 
