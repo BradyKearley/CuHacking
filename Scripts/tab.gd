@@ -8,7 +8,7 @@ func press(body: Node2D) -> void:
 	$AnimatedSprite2D.play("Down")
 	player = body
 	$Timer.start()
-	
+	# test
 
 func release() -> void:
 	$AnimatedSprite2D.play("Up")
