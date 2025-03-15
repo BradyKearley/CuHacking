@@ -90,16 +90,6 @@ position = Vector2(33.3351, 59.0313)
 scale = Vector2(2.01642, 0.02)
 texture = ExtResource("2_428d7")
 
-[node name="Sprite2D3" type="Sprite2D" parent="WALLS"]
-position = Vector2(34, -34)
-scale = Vector2(2.02469, 0.0366385)
-texture = ExtResource("2_428d7")
-
-[node name="Sprite2D4" type="Sprite2D" parent="WALLS"]
-position = Vector2(34, -34)
-scale = Vector2(2.02469, 0.0366385)
-texture = ExtResource("2_428d7")
-
 [node name="Sprite2D2" type="Sprite2D" parent="WALLS"]
 position = Vector2(11, 5)
 rotation = 3.14159
@@ -257,7 +247,7 @@ scale = Vector2(0.00839499, -0.537555)
 texture = ExtResource("2_428d7")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-48, 59, -48, -33, 116, -33, 116, 60, 122, 60, 121, -39, -48, -39, -60, -39, -59, 59)
+polygon = PackedVector2Array(-48, 59, -48, -33, 13.8886, -33, 116, -33, 116, 60, 122, 60, 121, -39, -48, -39, -60, -39, -59, 59)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
 position = Vector2(34, 59.35)
