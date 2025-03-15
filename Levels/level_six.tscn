@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="5_w7pkq"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="6_qlhvy"]
 [ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="7_xup78"]
-[ext_resource type="PackedScene" uid="uid://2rpksmr3p8fj" path="res://Levels/level_nine.tscn" id="8_uwysx"]
+[ext_resource type="PackedScene" uid="uid://ynpyh1p7433o" path="res://Levels/level_seven.tscn" id="8_36ieg"]
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="9_8klqi"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="10_jvfuv"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="11_ssudd"]
@@ -145,7 +145,7 @@ texture = ExtResource("2_jd3x0")
 [node name="Node2D" parent="." instance=ExtResource("7_xup78")]
 position = Vector2(-39.1219, -14.2942)
 scale = Vector2(0.1, 0.1)
-next_level = ExtResource("8_uwysx")
+next_level = ExtResource("8_36ieg")
 
 [node name="TopBar3" type="Sprite2D" parent="."]
 position = Vector2(35.5, -36.006)
