@@ -1,11 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://deeboqsgkdrlb"]
+[gd_scene load_steps=10 format=3 uid="uid://deeboqsgkdrlb"]
 
 [ext_resource type="Script" uid="uid://bg4es3nsbvnsy" path="res://Scripts/caps_lock.gd" id="1_7nnx7"]
+[ext_resource type="AudioStream" uid="uid://cosc81evi4ud" path="res://SFX/spacebar-click-keyboard-199448_iju6vpxH.mp3" id="2_y4gkt"]
+[ext_resource type="Texture2D" uid="uid://cmgs182spkrhk" path="res://Art/Buttons/defaultButtonSheet.png" id="3_v5qbk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y4gkt"]
 size = Vector2(16, 6)
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_v5qbk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7125o"]
 size = Vector2(16, 9.875)
@@ -13,16 +13,38 @@ size = Vector2(16, 9.875)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gvbd3"]
 size = Vector2(16, 25)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_o0s7b"]
+atlas = ExtResource("3_v5qbk")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfox7"]
+atlas = ExtResource("3_v5qbk")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7125o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o0s7b")
+}],
+"loop": true,
+"name": &"Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cfox7")
+}],
+"loop": true,
+"name": &"Up",
+"speed": 5.0
+}]
+
 [node name="CapsLock" type="StaticBody2D"]
 script = ExtResource("1_7nnx7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_y4gkt")
-
-[node name="Texture" type="Sprite2D" parent="."]
-position = Vector2(0, 2.98023e-08)
-scale = Vector2(16, 6)
-texture = SubResource("PlaceholderTexture2D_v5qbk")
 
 [node name="Hitbox" type="Area2D" parent="."]
 
@@ -39,6 +61,15 @@ shape = SubResource("RectangleShape2D_gvbd3")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.25
 one_shot = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_y4gkt")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.25, -3.875)
+scale = Vector2(0.0917969, 0.124023)
+sprite_frames = SubResource("SpriteFrames_7125o")
+animation = &"Up"
 
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
 [connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]
