@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://cwm11gabt28ak"]
 
 [ext_resource type="Script" uid="uid://bvqhc3dsk4h7e" path="res://Scripts/tab.gd" id="1_vbepe"]
-[ext_resource type="Texture2D" uid="uid://cmgs182spkrhk" path="res://Art/Buttons/defaultButtonSheet.png" id="2_xn7ss"]
 [ext_resource type="AudioStream" uid="uid://cosc81evi4ud" path="res://SFX/spacebar-click-keyboard-199448_iju6vpxH.mp3" id="3_63sh6"]
+[ext_resource type="Texture2D" uid="uid://bjpjxy1rrr25i" path="res://Art/Buttons/tab keycap button-Sheet.png" id="3_ti34l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_63sh6"]
 size = Vector2(16, 6)
@@ -13,19 +13,19 @@ size = Vector2(16, 9.875)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vbepe"]
 size = Vector2(16, 25)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_o0s7b"]
-atlas = ExtResource("2_xn7ss")
+[sub_resource type="AtlasTexture" id="AtlasTexture_v80lh"]
+atlas = ExtResource("3_ti34l")
 region = Rect2(256, 0, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cfox7"]
-atlas = ExtResource("2_xn7ss")
+[sub_resource type="AtlasTexture" id="AtlasTexture_2s2w1"]
+atlas = ExtResource("3_ti34l")
 region = Rect2(0, 0, 256, 256)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ti34l"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_o0s7b")
+"texture": SubResource("AtlasTexture_v80lh")
 }],
 "loop": true,
 "name": &"Down",
@@ -33,7 +33,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cfox7")
+"texture": SubResource("AtlasTexture_2s2w1")
 }],
 "loop": true,
 "name": &"Up",

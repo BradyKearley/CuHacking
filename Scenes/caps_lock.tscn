@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bg4es3nsbvnsy" path="res://Scripts/caps_lock.gd" id="1_7nnx7"]
 [ext_resource type="AudioStream" uid="uid://cosc81evi4ud" path="res://SFX/spacebar-click-keyboard-199448_iju6vpxH.mp3" id="2_y4gkt"]
-[ext_resource type="Texture2D" uid="uid://cmgs182spkrhk" path="res://Art/Buttons/defaultButtonSheet.png" id="3_v5qbk"]
+[ext_resource type="Texture2D" uid="uid://drvjpbvsh55ad" path="res://Art/Buttons/caps keycap button-Sheet.png" id="3_v5qbk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y4gkt"]
 size = Vector2(16, 6)
@@ -13,11 +13,11 @@ size = Vector2(16, 9.875)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gvbd3"]
 size = Vector2(16, 25)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_o0s7b"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7125o"]
 atlas = ExtResource("3_v5qbk")
 region = Rect2(256, 0, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cfox7"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gvbd3"]
 atlas = ExtResource("3_v5qbk")
 region = Rect2(0, 0, 256, 256)
 
@@ -25,7 +25,7 @@ region = Rect2(0, 0, 256, 256)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_o0s7b")
+"texture": SubResource("AtlasTexture_7125o")
 }],
 "loop": true,
 "name": &"Down",
@@ -33,7 +33,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cfox7")
+"texture": SubResource("AtlasTexture_gvbd3")
 }],
 "loop": true,
 "name": &"Up",
