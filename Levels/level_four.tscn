@@ -53,14 +53,12 @@ scale = Vector2(2.02469, 0.0290951)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="Background" type="Sprite2D" parent="."]
-visible = false
 z_index = -4
 position = Vector2(35, 10.5)
 scale = Vector2(0.521739, 0.276353)
 texture = ExtResource("4_3w6oc")
 
 [node name="Wp9532787-windows-old-wallpapers" type="Sprite2D" parent="Background"]
-visible = false
 z_index = -5
 position = Vector2(-1.91666, 10.9689)
 scale = Vector2(0.273524, 0.521354)
@@ -91,8 +89,8 @@ scale = Vector2(0.271605, 0.724677)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="."]
-position = Vector2(62, 4.18749)
-scale = Vector2(0.271605, 0.642511)
+position = Vector2(62, 5.21904)
+scale = Vector2(0.271605, 0.620279)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="."]
@@ -266,7 +264,7 @@ zoom = Vector2(7, 7)
 position = Vector2(28, 11)
 
 [node name="Box2" parent="." instance=ExtResource("15_kmqfq")]
-position = Vector2(57, -19)
+position = Vector2(53.5094, -21.8654)
 
 [node name="Spike" parent="." instance=ExtResource("16_757ny")]
 position = Vector2(41, 55)
