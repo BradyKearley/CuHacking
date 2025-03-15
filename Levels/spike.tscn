@@ -1,17 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://ddkx2em3bw8xa"]
+[gd_scene load_steps=11 format=3 uid="uid://ddkx2em3bw8xa"]
 
 [ext_resource type="Script" uid="uid://f5fvr0rfdn8t" path="res://spike.gd" id="1_s607c"]
 [ext_resource type="Texture2D" uid="uid://di7ymu1dtx01g" path="res://Art/Other/spikes 4x1.png" id="2_s607c"]
 [ext_resource type="AudioStream" uid="uid://ba6r008emkcmn" path="res://SFX/explosion (2).wav" id="3_s607c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0pquk"]
-size = Vector2(23, 4)
+size = Vector2(23, 3)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fb30k"]
 size = Vector2(23, 5.875)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_subnp"]
-size = Vector2(23, 10)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6wgmb"]
 atlas = ExtResource("2_s607c")
@@ -53,7 +50,7 @@ animations = [{
 script = ExtResource("1_s607c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 1)
+position = Vector2(0.5, 1.5)
 shape = SubResource("RectangleShape2D_0pquk")
 
 [node name="Hitbox" type="Area2D" parent="."]
@@ -61,12 +58,6 @@ shape = SubResource("RectangleShape2D_0pquk")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(0.5, 0.9375)
 shape = SubResource("RectangleShape2D_fb30k")
-
-[node name="Detector" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
-position = Vector2(0.5, -1)
-shape = SubResource("RectangleShape2D_subnp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0.25, -3.875)
@@ -83,5 +74,4 @@ one_shot = true
 stream = ExtResource("3_s607c")
 
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
-[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
