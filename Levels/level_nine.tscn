@@ -47,7 +47,7 @@ texture = ExtResource("7_dqtfw")
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -4
-position = Vector2(34.9526, 8.13188)
+position = Vector2(34.0054, 11.0597)
 scale = Vector2(0.521739, 0.276353)
 texture = ExtResource("8_v7mfa")
 
@@ -61,7 +61,6 @@ texture = ExtResource("9_xjgn1")
 [node name="Enter_Key" parent="." instance=ExtResource("10_lxv48")]
 position = Vector2(-1, 12)
 scale = Vector2(0.1, 0.1)
-script = null
 
 [node name="Tab" parent="." instance=ExtResource("4_il148")]
 position = Vector2(24, 54)

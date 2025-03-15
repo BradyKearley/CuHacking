@@ -1,0 +1,236 @@
+[gd_scene load_steps=14 format=3 uid="uid://cytaxutapoe4h"]
+
+[ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_37kji"]
+[ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_ldig2"]
+[ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="3_tmcvs"]
+[ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="4_kwxeo"]
+[ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="5_1lrma"]
+[ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="6_phqwr"]
+[ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="7_mblkb"]
+[ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="8_7lci3"]
+[ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="10_7j4wf"]
+[ext_resource type="PackedScene" uid="uid://bjxkrkvfm1oal" path="res://Scenes/pg_down.tscn" id="11_hdq7y"]
+[ext_resource type="PackedScene" uid="uid://b4nfsi88uoetg" path="res://Scenes/shift.tscn" id="12_hejg5"]
+[ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="13_3eiat"]
+[ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="13_37kji"]
+
+[node name="LevelOne" type="StaticBody2D"]
+script = ExtResource("1_37kji")
+
+[node name="Player" parent="." instance=ExtResource("2_ldig2")]
+position = Vector2(42.1784, 25.8731)
+scale = Vector2(0.5, 0.5)
+
+[node name="TopBar2" type="Sprite2D" parent="."]
+position = Vector2(35.5, -36.006)
+scale = Vector2(0.172553, 0.166333)
+texture = ExtResource("3_tmcvs")
+
+[node name="Screenshot2025-03-15005557" type="Sprite2D" parent="TopBar2"]
+position = Vector2(480.65, 297.631)
+scale = Vector2(0.9581, 0.980909)
+texture = ExtResource("4_kwxeo")
+
+[node name="Screenshot2025-03-15005637" type="Sprite2D" parent="TopBar2"]
+position = Vector2(4.57764e-05, 577.942)
+scale = Vector2(0.792166, 1.169)
+texture = ExtResource("5_1lrma")
+
+[node name="Screenshot2025-03-15005638" type="Sprite2D" parent="TopBar2"]
+position = Vector2(-488.709, 300.637)
+scale = Vector2(0.0108565, 62.7923)
+texture = ExtResource("5_1lrma")
+
+[node name="Background" type="Sprite2D" parent="."]
+visible = false
+z_index = -4
+position = Vector2(34.0054, 11.0597)
+scale = Vector2(0.521739, 0.276353)
+texture = ExtResource("6_phqwr")
+
+[node name="Wp9532787-windows-old-wallpapers" type="Sprite2D" parent="Background"]
+z_index = -5
+position = Vector2(-1.91666, 10.9689)
+scale = Vector2(0.273524, 0.521354)
+texture = ExtResource("7_mblkb")
+
+[node name="Enter_Key" parent="." instance=ExtResource("8_7lci3")]
+position = Vector2(106.291, 21.358)
+scale = Vector2(0.1, 0.1)
+
+[node name="WALLS" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="WALLS"]
+position = Vector2(33.3351, 59.0313)
+scale = Vector2(2.01642, 0.02)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D3" type="Sprite2D" parent="WALLS"]
+position = Vector2(34, -34)
+scale = Vector2(2.02469, 0.0366385)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D4" type="Sprite2D" parent="WALLS"]
+position = Vector2(34, -34)
+scale = Vector2(2.02469, 0.0366385)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D2" type="Sprite2D" parent="WALLS"]
+position = Vector2(11, 5)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.526609)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D13" type="Sprite2D" parent="WALLS"]
+position = Vector2(11, 48.8718)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.349774)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D10" type="Sprite2D" parent="WALLS"]
+position = Vector2(14, 22.882)
+rotation = 3.14159
+scale = Vector2(0.00839499, -1.25013)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D8" type="Sprite2D" parent="WALLS"]
+position = Vector2(-20, 29.3614)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.332175)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D6" type="Sprite2D" parent="WALLS"]
+position = Vector2(99.34, 43.34)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.525477)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D15" type="Sprite2D" parent="WALLS"]
+position = Vector2(36.0185, 45.4444)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.457051)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D16" type="Sprite2D" parent="WALLS"]
+position = Vector2(66.8957, 45.2765)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.457051)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D5" type="Sprite2D" parent="WALLS"]
+position = Vector2(-19.2025, -10)
+rotation = -1.57079
+scale = Vector2(0.00839499, -1.03778)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D9" type="Sprite2D" parent="WALLS"]
+position = Vector2(-17.3358, -13)
+rotation = -1.57079
+scale = Vector2(0.00839499, -1.09517)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D11" type="Sprite2D" parent="WALLS"]
+position = Vector2(-19, 58)
+rotation = -1.57079
+scale = Vector2(0.00839499, -1.03692)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D18" type="Sprite2D" parent="WALLS"]
+position = Vector2(35.3566, 57.9998)
+rotation = -1.57079
+scale = Vector2(0.00839514, -0.0295739)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D19" type="Sprite2D" parent="WALLS"]
+position = Vector2(35.3566, 57.9998)
+rotation = -1.57079
+scale = Vector2(0.00839514, -0.0295739)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D21" type="Sprite2D" parent="WALLS"]
+position = Vector2(108.071, 28.34)
+rotation = -1.57079
+scale = Vector2(0.00839499, -0.290317)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D22" type="Sprite2D" parent="WALLS"]
+position = Vector2(51.5124, 32.4011)
+rotation = -1.57079
+scale = Vector2(0.00839499, -0.545577)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D14" type="Sprite2D" parent="WALLS"]
+position = Vector2(24.6088, 58)
+rotation = -1.57079
+scale = Vector2(0.00839499, -0.368262)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D17" type="Sprite2D" parent="WALLS"]
+position = Vector2(83.1138, 58.1526)
+rotation = -1.57079
+scale = Vector2(0.00839499, -0.570792)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D7" type="Sprite2D" parent="WALLS"]
+position = Vector2(-4.50514, 20)
+rotation = -1.57079
+scale = Vector2(0.00839499, -0.546313)
+texture = ExtResource("13_3eiat")
+
+[node name="Sprite2D12" type="Sprite2D" parent="WALLS"]
+position = Vector2(-4.25398, 39)
+rotation = -1.57079
+scale = Vector2(0.00839499, -0.537555)
+texture = ExtResource("13_3eiat")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-48, 59, -48, -33, 116, -33, 116, 60, 122, 60, 121, -39, -48, -39, -60, -39, -59, 59)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+position = Vector2(34, 59.35)
+scale = Vector2(2.02469, 0.0290951)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
+position = Vector2(-17.4474, -11.4061)
+scale = Vector2(0.781827, 0.0646552)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="."]
+position = Vector2(114.849, 43.3468)
+scale = Vector2(0.389407, 0.527069)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="."]
+position = Vector2(51.3679, 45.3533)
+scale = Vector2(0.389407, 0.459409)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="."]
+position = Vector2(12.4402, 23.8226)
+rotation = 1.5708
+scale = Vector2(0.914218, 0.0619665)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="."]
+position = Vector2(-4.75122, 29.5606)
+rotation = 1.5708
+scale = Vector2(0.243422, 0.535825)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29, -12.8984, -29.0001)
+
+[node name="Shift" parent="." instance=ExtResource("12_hejg5")]
+position = Vector2(1.04462, 53.9067)
+
+[node name="PgDown" parent="." instance=ExtResource("11_hdq7y")]
+position = Vector2(-4.30906, -16.9968)
+
+[node name="PageUp" parent="." instance=ExtResource("10_7j4wf")]
+visible = false
+position = Vector2(23.8722, 53.6306)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(34, 13)
+zoom = Vector2(7, 7)
+
+[node name="Spike" parent="." instance=ExtResource("13_37kji")]
+position = Vector2(82.3087, 54.6008)
