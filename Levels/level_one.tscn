@@ -26,9 +26,6 @@ position = Vector2(18, 38.0156)
 scale = Vector2(0.271605, 0.724677)
 texture = ExtResource("1_pvy0h")
 
-[node name="Tab" parent="." instance=ExtResource("2_om7uc")]
-position = Vector2(-4, 55)
-
 [node name="Player" parent="." instance=ExtResource("3_cph7v")]
 position = Vector2(-36, 45)
 scale = Vector2(0.5, 0.5)
@@ -49,3 +46,6 @@ polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 position = Vector2(18, 38.0156)
 scale = Vector2(0.271605, 0.724677)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="Tab" parent="." instance=ExtResource("2_om7uc")]
+position = Vector2(-3, 54)
