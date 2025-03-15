@@ -1,0 +1,91 @@
+[gd_scene load_steps=8 format=3 uid="uid://cis68rktnwlv7"]
+
+[ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_5qvx8"]
+[ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_hllw6"]
+[ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="3_qor8d"]
+[ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="4_6e2af"]
+[ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="5_yw3yt"]
+[ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="6_1brcv"]
+[ext_resource type="PackedScene" uid="uid://d28fqy1odf07u" path="res://Scenes/start_button.tscn" id="7_hllw6"]
+
+[node name="Main Menu" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(34, 59)
+scale = Vector2(2.02469, 0.0366385)
+texture = ExtResource("1_5qvx8")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(34, -34)
+scale = Vector2(2.02469, 0.0366385)
+texture = ExtResource("1_5qvx8")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(34, -34)
+scale = Vector2(2.02469, 0.0366385)
+texture = ExtResource("1_5qvx8")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(5, 36.5)
+scale = Vector2(0.197531, 0.0517241)
+texture = ExtResource("1_5qvx8")
+
+[node name="Player" parent="." instance=ExtResource("2_hllw6")]
+position = Vector2(-38, 51)
+scale = Vector2(0.5, 0.5)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(34, 13)
+zoom = Vector2(7, 7)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-48, 59, -48, -33, 116, -33, 116, 60, 122, 60, 121, -39, -48, -39, -60, -39, -59, 59)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+position = Vector2(34, 59)
+scale = Vector2(2.02469, 0.0366385)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="TopBar2" type="Sprite2D" parent="."]
+position = Vector2(35.5, -36.006)
+scale = Vector2(0.172553, 0.166333)
+texture = ExtResource("3_qor8d")
+
+[node name="Screenshot2025-03-15005557" type="Sprite2D" parent="TopBar2"]
+position = Vector2(480.65, 297.631)
+scale = Vector2(0.9581, 0.980909)
+texture = ExtResource("4_6e2af")
+
+[node name="Screenshot2025-03-15005637" type="Sprite2D" parent="TopBar2"]
+position = Vector2(4.57764e-05, 577.942)
+scale = Vector2(0.792166, 1.169)
+texture = ExtResource("5_yw3yt")
+
+[node name="Screenshot2025-03-15005638" type="Sprite2D" parent="TopBar2"]
+position = Vector2(-488.709, 300.637)
+scale = Vector2(0.0108565, 62.7923)
+texture = ExtResource("5_yw3yt")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(34, 16)
+scale = Vector2(0.259259, 0.0606141)
+texture = ExtResource("1_5qvx8")
+
+[node name="PageUp" parent="." instance=ExtResource("6_1brcv")]
+position = Vector2(-22, 54)
+
+[node name="PageUp2" parent="." instance=ExtResource("6_1brcv")]
+position = Vector2(5, 31)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
+position = Vector2(5, 36.5)
+scale = Vector2(0.197531, 0.0517241)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
+position = Vector2(34, 16)
+scale = Vector2(0.259259, 0.0606141)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="Start Button" parent="." instance=ExtResource("7_hllw6")]
+position = Vector2(34, 10)
