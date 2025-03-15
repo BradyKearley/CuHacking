@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dg8y4y0gt73ln"]
+[gd_scene load_steps=17 format=3 uid="uid://dg8y4y0gt73ln"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_2kwn0"]
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_kkbwx"]
@@ -8,11 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="5_ch07b"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="6_1y2jm"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="7_kkbwx"]
+[ext_resource type="PackedScene" uid="uid://bi4xo88q34hhg" path="res://Levels/level_four.tscn" id="9_21lly"]
 [ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="9_oqbxi"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="9_rqt54"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="10_21lly"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="9_rqt54"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="10_21lly"]
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="10_svaqi"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="11_g6cyn"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="11_g6cyn"]
 [ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="11_svaqi"]
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="12_v5eo1"]
 
@@ -149,6 +150,7 @@ texture = ExtResource("1_2kwn0")
 [node name="Node2D" parent="." instance=ExtResource("11_svaqi")]
 position = Vector2(101.348, 0.675655)
 scale = Vector2(0.1, 0.1)
+next_level = ExtResource("9_21lly")
 
 [node name="Spike" parent="." instance=ExtResource("12_v5eo1")]
 position = Vector2(18.685, 55.609)
