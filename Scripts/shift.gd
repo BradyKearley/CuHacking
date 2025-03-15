@@ -1,38 +1,35 @@
 extends StaticBody2D
-var player: Node2D
-var sticky_count = 0
-var sticky = false
+var actor: Node2D
+var disabled = false
 # Set textures here maybe
 func press(body: Node2D) -> void:
 	# Change if shift signal 
 	$AudioStreamPlayer2D.pitch_scale = randf_range(0.8,1.2)
 	$AudioStreamPlayer2D.play()
 	$AnimatedSprite2D.play("Down")
-	player = body
-	$Timer.start()
-	# test
+	actor = body
 
 func release() -> void:
 	$AnimatedSprite2D.play("Up")
-	player = null
-	if !sticky:
-		Shiftvariable.shifted = false
-	sticky_count += 1
+	actor = null
+	Shiftvariable.shifted = false
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
-	if body.is_in_group("Player") or body.is_in_group("Movable"):  # Ensure the player is falling onto the button
-		press(body)
+	if !disabled:
+		if body.is_in_group("Movable"):
+			disabled = true
+			press(body)
+		if body.is_in_group("Player"):
+			press(body)
+			$Timer.start()
 
 func _on_detector_body_exited(body: Node2D) -> void:
-	if body.is_in_group("Player") or body.is_in_group("Movable"):
+	if body.is_in_group("Movable"):
+		disabled = false
+	elif body.is_in_group("Player") and !disabled:
 		release()
 
 func _on_timer_timeout() -> void:
 	$Timer.wait_time = .1  # Move the player
-	if sticky_count == 5: # Toggle shift if sticky keys enabled
-		Shiftvariable.shifted = !Shiftvariable.shifted
-		sticky_count = 0
-		sticky = true
-	if(player):
-		if sticky == false:
-			Shiftvariable.shifted = true
+	if(actor):
+		Shiftvariable.shifted = true

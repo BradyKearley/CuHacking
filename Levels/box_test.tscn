@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://do3k6f2hdm6a"]
+[gd_scene load_steps=11 format=3 uid="uid://do3k6f2hdm6a"]
 
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="1_821wm"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_r62j0"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="3_jyxac"]
 [ext_resource type="PackedScene" uid="uid://deeboqsgkdrlb" path="res://Scenes/caps_lock.tscn" id="4_repx2"]
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="5_4koiy"]
+[ext_resource type="PackedScene" uid="uid://b4nfsi88uoetg" path="res://Scenes/shift.tscn" id="6_r62j0"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ydj4e"]
 
@@ -44,17 +45,18 @@ position = Vector2(-56, 60)
 position = Vector2(121, 60)
 
 [node name="Box" parent="." instance=ExtResource("5_4koiy")]
-position = Vector2(7, 38)
+position = Vector2(8, 46)
 scale = Vector2(1.01544, 1.00294)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(3, 54)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, 8)
 shape = SubResource("RectangleShape2D_quler")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(0, -4.76837e-07)
+position = Vector2(1, 8)
 scale = Vector2(20, 20)
 texture = SubResource("PlaceholderTexture2D_xc404")
 
@@ -90,4 +92,7 @@ position = Vector2(106, 38)
 scale = Vector2(1.04704, 1.00885)
 
 [node name="CapsLock2" parent="." instance=ExtResource("4_repx2")]
-position = Vector2(82, 60)
+position = Vector2(142, 59)
+
+[node name="Shift" parent="." instance=ExtResource("6_r62j0")]
+position = Vector2(-17, 60)
