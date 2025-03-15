@@ -46,5 +46,5 @@ func _on_right_collider_body_entered(body: Node2D) -> void:
 			physics_material_override.friction = 0.08
 		else: # Small box, small player
 			physics_material_override.friction = 1
-		linear_velocity.x = 1.0 * push_force  # Apply force to move the box
+		linear_velocity.x = -1.0 * push_force  # Apply force to move the box
 		push_force = 50
