@@ -53,7 +53,6 @@ scale = Vector2(0.521739, 0.276353)
 texture = ExtResource("8_v7mfa")
 
 [node name="Wp9532787-windows-old-wallpapers" type="Sprite2D" parent="Background"]
-visible = false
 z_index = -5
 position = Vector2(-1.91666, 10.9689)
 scale = Vector2(0.273524, 0.521354)
@@ -80,7 +79,7 @@ position = Vector2(-38, 54)
 position = Vector2(107, 24)
 
 [node name="Box" parent="." instance=ExtResource("13_qw1sw")]
-position = Vector2(62.6223, 5.47182)
+position = Vector2(66.6148, 5.47182)
 
 [node name="Shift" parent="." instance=ExtResource("14_il148")]
 position = Vector2(48.341, 53.907)
@@ -111,13 +110,13 @@ scale = Vector2(0.00839499, -0.110166)
 texture = ExtResource("2_428d7")
 
 [node name="Sprite2D26" type="Sprite2D" parent="WALLS"]
-position = Vector2(79, 6.15344)
+position = Vector2(87.2669, 6.15344)
 rotation = 3.14159
 scale = Vector2(0.00839499, -0.190422)
 texture = ExtResource("2_428d7")
 
 [node name="Sprite2D31" type="Sprite2D" parent="WALLS"]
-position = Vector2(58.4253, 13.02)
+position = Vector2(64.2967, 12.746)
 rotation = 3.14159
 scale = Vector2(0.00839499, -0.057405)
 texture = ExtResource("2_428d7")
@@ -207,21 +206,21 @@ scale = Vector2(0.00839499, -0.469322)
 texture = ExtResource("2_428d7")
 
 [node name="Sprite2D28" type="Sprite2D" parent="WALLS"]
-position = Vector2(84.1967, 0.958808)
+position = Vector2(88.1643, 0.958833)
 rotation = -1.57079
-scale = Vector2(0.00839499, -0.177256)
+scale = Vector2(0.00839499, -0.0404413)
 texture = ExtResource("2_428d7")
 
 [node name="Sprite2D29" type="Sprite2D" parent="WALLS"]
-position = Vector2(73.4405, 14.4021)
+position = Vector2(76.337, 14.4021)
 rotation = -1.57079
-scale = Vector2(0.00839499, -0.528503)
+scale = Vector2(0.00839499, -0.428622)
 texture = ExtResource("2_428d7")
 
 [node name="Sprite2D30" type="Sprite2D" parent="WALLS"]
-position = Vector2(68.403, 11.4021)
+position = Vector2(75.8322, 11.4021)
 rotation = -1.57079
-scale = Vector2(0.00839499, -0.356332)
+scale = Vector2(0.00839499, -0.406003)
 texture = ExtResource("2_428d7")
 
 [node name="Sprite2D14" type="Sprite2D" parent="WALLS"]
@@ -267,13 +266,13 @@ scale = Vector2(0.383581, 0.111986)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="."]
-position = Vector2(73.728, 12.9193)
-scale = Vector2(0.386234, 0.0650518)
+position = Vector2(76.4681, 12.9193)
+scale = Vector2(0.316717, 0.0650518)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5745, 27.6439, 40.5, -29)
 
 [node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="."]
-position = Vector2(84.1874, 6.25231)
-scale = Vector2(0.133755, 0.195467)
+position = Vector2(88.0678, 6.3446)
+scale = Vector2(0.0270291, 0.195467)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5745, 27.6439, 40.5, -29)
 
 [node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="."]
