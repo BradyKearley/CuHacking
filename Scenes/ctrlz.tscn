@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://ckhnkrcafhmqm"]
 
-[ext_resource type="Script" path="res://Scripts/ctrlz.gd" id="1_jqof2"]
+[ext_resource type="Script" uid="uid://crlr32uwd7qni" path="res://Scripts/ctrlz.gd" id="1_jqof2"]
 [ext_resource type="Texture2D" uid="uid://di7ymu1dtx01g" path="res://Art/Other/spikes 4x1.png" id="2_jqof2"]
 [ext_resource type="AudioStream" uid="uid://cosc81evi4ud" path="res://SFX/spacebar-click-keyboard-199448_iju6vpxH.mp3" id="3_62jh6"]
 
