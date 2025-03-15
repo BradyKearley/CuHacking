@@ -15,7 +15,7 @@
 [ext_resource type="Script" path="res://Levels/big_button.gd" id="12_afeaf"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="13_jbsh1"]
 
-[node name="LevelOne" type="StaticBody2D"]
+[node name="LevelOne2" type="StaticBody2D"]
 script = ExtResource("1_5fkoe")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
