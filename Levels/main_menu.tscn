@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cis68rktnwlv7"]
+[gd_scene load_steps=12 format=3 uid="uid://cis68rktnwlv7"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_5qvx8"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_hllw6"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://d28fqy1odf07u" path="res://Scenes/start_button.tscn" id="7_hllw6"]
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="8_qor8d"]
 [ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="9_6e2af"]
+[ext_resource type="PackedScene" uid="uid://cu2yw66jdr2hs" path="res://Scenes/up_arrow.tscn" id="10_yw3yt"]
+[ext_resource type="PackedScene" uid="uid://dkgqvrnivug6e" path="res://Scenes/down_arrow.tscn" id="11_1brcv"]
 
 [node name="Main Menu" type="StaticBody2D"]
 
@@ -103,3 +105,9 @@ z_index = -5
 position = Vector2(-1.91666, 10.9689)
 scale = Vector2(0.273524, 0.521354)
 texture = ExtResource("8_qor8d")
+
+[node name="UpArrow" parent="." instance=ExtResource("10_yw3yt")]
+position = Vector2(66, 54)
+
+[node name="DownArrow" parent="." instance=ExtResource("11_1brcv")]
+position = Vector2(93, 54)
