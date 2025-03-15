@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="13_ldig2"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="14_ldig2"]
 
-[node name="LevelOne" type="StaticBody2D"]
+[node name="LevelOne2" type="StaticBody2D"]
 script = ExtResource("1_37kji")
 
 [node name="Player" parent="." instance=ExtResource("2_ldig2")]
@@ -43,7 +43,6 @@ scale = Vector2(0.0108565, 62.7923)
 texture = ExtResource("5_1lrma")
 
 [node name="Background" type="Sprite2D" parent="."]
-visible = false
 z_index = -4
 position = Vector2(34.0054, 11.0597)
 scale = Vector2(0.521739, 0.276353)

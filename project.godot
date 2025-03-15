@@ -19,6 +19,7 @@ config/icon="uid://cyrgdaiclv4xm"
 
 AudioPlayer="*res://SFX/audio_player.tscn"
 Shiftvariable="*res://Scenes/shiftvariable.tscn"
+Volume="*res://Scenes/volume.tscn"
 
 [display]
 

@@ -1,6 +1,10 @@
 extends StaticBody2D
 var actor: Node2D
 var disabled = false
+
+func _ready() -> void:
+	Shiftvariable.shifted = false
+
 # Set textures here maybe
 func press(body: Node2D) -> void:
 	# Change if shift signal 

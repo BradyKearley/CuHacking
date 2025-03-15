@@ -1,0 +1,77 @@
+[gd_scene load_steps=10 format=3 uid="uid://dkgqvrnivug6e"]
+
+[ext_resource type="Script" uid="uid://cvqh4b2y1auan" path="res://Scripts/down_arrow.gd" id="1_jip8a"]
+[ext_resource type="AudioStream" uid="uid://cosc81evi4ud" path="res://SFX/spacebar-click-keyboard-199448_iju6vpxH.mp3" id="2_6cgf5"]
+[ext_resource type="Texture2D" uid="uid://bjpjxy1rrr25i" path="res://Art/Buttons/tab keycap button-Sheet.png" id="3_moa4c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ep0l"]
+size = Vector2(16, 6.92971)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i6d6e"]
+size = Vector2(16, 9.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_35484"]
+size = Vector2(16, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v80lh"]
+atlas = ExtResource("3_moa4c")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2s2w1"]
+atlas = ExtResource("3_moa4c")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ewlay"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v80lh")
+}],
+"loop": true,
+"name": &"Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2s2w1")
+}],
+"loop": true,
+"name": &"Up",
+"speed": 5.0
+}]
+
+[node name="DownArrow" type="StaticBody2D"]
+script = ExtResource("1_jip8a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.464856)
+shape = SubResource("RectangleShape2D_5ep0l")
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -1.0625)
+shape = SubResource("RectangleShape2D_i6d6e")
+
+[node name="Detector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
+position = Vector2(0, -8.5)
+shape = SubResource("RectangleShape2D_35484")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_6cgf5")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.25, -3.875)
+scale = Vector2(0.0917969, 0.124023)
+sprite_frames = SubResource("SpriteFrames_ewlay")
+animation = &"Up"
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
