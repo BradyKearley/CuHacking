@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://ciqe1jp0n4yvy"]
+
+[ext_resource type="Script" uid="uid://mg7sj3kxcchf" path="res://Scripts/page_up.gd" id="1_qlhtt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qlhtt"]
+size = Vector2(16, 6)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_x1fib"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o0s7b"]
+size = Vector2(16, 9.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cfox7"]
+size = Vector2(16, 25)
+
+[node name="PageUp" type="StaticBody2D"]
+script = ExtResource("1_qlhtt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qlhtt")
+
+[node name="Texture" type="Sprite2D" parent="."]
+position = Vector2(0, 2.98023e-08)
+scale = Vector2(16, 6)
+texture = SubResource("PlaceholderTexture2D_x1fib")
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -1.0625)
+shape = SubResource("RectangleShape2D_o0s7b")
+
+[node name="Detector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
+position = Vector2(0, -8.5)
+shape = SubResource("RectangleShape2D_cfox7")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]

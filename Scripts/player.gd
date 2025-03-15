@@ -4,6 +4,8 @@ const SPEED = 80.0
 const JUMP_VELOCITY = -200.0
 @onready var sprite = $AnimatedSprite2D # Ensure the AnimatedSprite2D node is named properly
 var facing_right = true # Track the player's facing direction
+var is_caps = false
+
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():

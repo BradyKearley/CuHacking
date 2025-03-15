@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://deeboqsgkdrlb"]
+
+[ext_resource type="Script" uid="uid://bg4es3nsbvnsy" path="res://Scripts/caps_lock.gd" id="1_7nnx7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y4gkt"]
+size = Vector2(16, 6)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_v5qbk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7125o"]
+size = Vector2(16, 9.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gvbd3"]
+size = Vector2(16, 25)
+
+[node name="CapsLock" type="StaticBody2D"]
+script = ExtResource("1_7nnx7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_y4gkt")
+
+[node name="Texture" type="Sprite2D" parent="."]
+position = Vector2(0, 2.98023e-08)
+scale = Vector2(16, 6)
+texture = SubResource("PlaceholderTexture2D_v5qbk")
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -1.0625)
+shape = SubResource("RectangleShape2D_7125o")
+
+[node name="Detector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
+position = Vector2(0, -8.5)
+shape = SubResource("RectangleShape2D_gvbd3")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]

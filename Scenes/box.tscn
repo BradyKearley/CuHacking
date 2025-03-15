@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://d23mfltklrsvc"]
+
+[ext_resource type="Script" uid="uid://bhvnanf4h7ufe" path="res://Scripts/box.gd" id="1_ego7h"]
+[ext_resource type="Texture2D" uid="uid://c7c24fffdrg3" path="res://icon.svg" id="2_2jyye"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ego7h"]
+friction = 10.0
+rough = true
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y6vpp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2jyye")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y7274"]
+size = Vector2(11, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ego7h"]
+size = Vector2(4, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2jyye"]
+size = Vector2(4, 10)
+
+[node name="Box" type="RigidBody2D"]
+mass = 10.0
+physics_material_override = SubResource("PhysicsMaterial_ego7h")
+lock_rotation = true
+script = ExtResource("1_ego7h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.0859375, 0.0859375)
+sprite_frames = SubResource("SpriteFrames_y6vpp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_y7274")
+
+[node name="LeftCollider" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftCollider"]
+position = Vector2(-4, 0)
+shape = SubResource("RectangleShape2D_ego7h")
+
+[node name="RightCollider" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightCollider"]
+position = Vector2(4, 0)
+shape = SubResource("RectangleShape2D_2jyye")
+
+[connection signal="body_entered" from="LeftCollider" to="." method="_on_left_collider_body_entered"]
+[connection signal="body_entered" from="RightCollider" to="." method="_on_right_collider_body_entered"]
