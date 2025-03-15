@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="1_rbxnc"]
 [ext_resource type="PackedScene" uid="uid://di2ppmsvb0tg6" path="res://Scenes/ball.tscn" id="2_2tkx8"]
-[ext_resource type="PackedScene" uid="uid://laulci42g2r1" path="res://Scenes/ctrlz.tscn" id="3_i3qsx"]
+[ext_resource type="PackedScene" uid="uid://ckhnkrcafhmqm" path="res://Scenes/ctrlz.tscn" id="3_i3qsx"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2tkx8"]
 
@@ -60,3 +60,6 @@ texture = SubResource("PlaceholderTexture2D_8l206")
 
 [node name="CTRLZ" parent="." instance=ExtResource("3_i3qsx")]
 position = Vector2(-88, 60)
+
+[node name="CTRLZ2" parent="." instance=ExtResource("3_i3qsx")]
+position = Vector2(48, 62)

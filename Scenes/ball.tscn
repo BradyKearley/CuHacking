@@ -10,7 +10,7 @@ radius = 7.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_yk4cr"]
 radius = 8.0
 
-[node name="Ball" type="RigidBody2D"]
+[node name="Ball" type="RigidBody2D" groups=["Ball"]]
 script = ExtResource("1_d60mj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
