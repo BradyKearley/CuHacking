@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://co2k3mlvvbugg"]
+
+[ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="1_fv4gx"]
+[ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="2_hixb6"]
+[ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="3_em48i"]
+
+[node name="BossBattle" type="StaticBody2D"]
+
+[node name="TopBar" type="Sprite2D" parent="."]
+position = Vector2(35.5, -36.006)
+scale = Vector2(0.172553, 0.166333)
+texture = ExtResource("1_fv4gx")
+
+[node name="Screenshot2025-03-15005557" type="Sprite2D" parent="TopBar"]
+position = Vector2(480.65, 297.631)
+scale = Vector2(0.9581, 0.980909)
+texture = ExtResource("2_hixb6")
+
+[node name="Screenshot2025-03-15005637" type="Sprite2D" parent="TopBar"]
+position = Vector2(4.57764e-05, 577.942)
+scale = Vector2(0.792166, 1.169)
+texture = ExtResource("3_em48i")
+
+[node name="Screenshot2025-03-15005638" type="Sprite2D" parent="TopBar"]
+position = Vector2(-488.709, 300.637)
+scale = Vector2(0.0108565, 62.7923)
+texture = ExtResource("3_em48i")
