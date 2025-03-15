@@ -5,8 +5,8 @@ extends StaticBody2D
 
 var is_pressed = false
 
-func _ready():
-	$Sprite2D.texture = normal_texture  # Set the default texture
+#func _ready():
+	#$Sprite2D.texture = normal_texture  # Set the default texture
 
 func _on_body_exited(body):
 	if body.is_in_group("player"):
