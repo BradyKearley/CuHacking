@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://v41b1woaa6q8"]
+
+[ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Player/tab.tscn" id="1_p4ur5"]
+[ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_uxux4"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vukl2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ulb0j"]
+size = Vector2(56, 26)
+
+[node name="TestLevel" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(28, 36)
+scale = Vector2(56.5, 25.5)
+texture = SubResource("PlaceholderTexture2D_vukl2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(28, 36)
+shape = SubResource("RectangleShape2D_ulb0j")
+
+[node name="Tab" parent="." instance=ExtResource("1_p4ur5")]
+position = Vector2(42, 25)
+
+[node name="Player" parent="." instance=ExtResource("2_uxux4")]
+position = Vector2(9, 17)
+scale = Vector2(0.5, 0.5)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(34, 13)
+zoom = Vector2(7, 7)
