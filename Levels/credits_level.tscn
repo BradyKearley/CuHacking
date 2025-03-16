@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://csajsw7xdkl3a"]
+[gd_scene load_steps=14 format=3 uid="uid://bgg2xtcolgnun"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_nkspb"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_oseab"]
@@ -7,16 +7,18 @@
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="5_6l6f2"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="6_cw3jp"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="7_c3vkd"]
-[ext_resource type="Script" path="res://Levels/x_button.gd" id="8_xec2y"]
-[ext_resource type="Script" path="res://Levels/_button.gd" id="9_s8fgv"]
+[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="8_xec2y"]
+[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="9_s8fgv"]
 [ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="10_y6w07"]
 [ext_resource type="PackedScene" uid="uid://ca2uuh5a6p88i" path="res://Scenes/end.tscn" id="11_ry8po"]
+[ext_resource type="Texture2D" uid="uid://oaehu12xpwu7" path="res://Art/Other/Credits.png" id="12_oseab"]
+[ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="13_ssaty"]
 
 [node name="Credits Level" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-20.5063, 59.0313)
-scale = Vector2(0.687, 0.02)
+position = Vector2(33.8351, 59.0313)
+scale = Vector2(2.02876, 0.02)
 texture = ExtResource("1_nkspb")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
@@ -123,6 +125,14 @@ zoom = Vector2(7, 7)
 
 [node name="End" parent="." instance=ExtResource("11_ry8po")]
 position = Vector2(32, 55)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(34.5, 8.375)
+scale = Vector2(0.0848958, 0.0752315)
+texture = ExtResource("12_oseab")
+
+[node name="Shader" parent="." instance=ExtResource("13_ssaty")]
 
 [connection signal="pressed" from="TopBar3/Node2D/XButton" to="TopBar3/Node2D/XButton" method="_on_pressed"]
 [connection signal="pressed" from="TopBar3/Node2D/-Button" to="TopBar3/Node2D/-Button" method="_on_pressed"]

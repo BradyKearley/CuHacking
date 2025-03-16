@@ -13,9 +13,9 @@
 [ext_resource type="Texture2D" uid="uid://e5ick0detj2m" path="res://Art/Other/title.png" id="10_b8u61"]
 [ext_resource type="PackedScene" uid="uid://cu2yw66jdr2hs" path="res://Scenes/up_arrow.tscn" id="10_yw3yt"]
 [ext_resource type="PackedScene" uid="uid://dkgqvrnivug6e" path="res://Scenes/down_arrow.tscn" id="11_1brcv"]
-[ext_resource type="PackedScene" path="res://Scenes/ctrl_d_button.tscn" id="14_y558p"]
-[ext_resource type="Script" path="res://Levels/x_button.gd" id="15_gju5e"]
-[ext_resource type="Script" path="res://Levels/_button.gd" id="16_7b3dh"]
+[ext_resource type="PackedScene" uid="uid://d2avxn1dp7b54" path="res://Scenes/ctrl_d_button.tscn" id="14_y558p"]
+[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="15_gju5e"]
+[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="16_7b3dh"]
 [ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="17_68l63"]
 [ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="18_7b3dh"]
 
