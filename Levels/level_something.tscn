@@ -96,19 +96,18 @@ position = Vector2(-122, -63)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-17, -49)
-rotation = 0.020552
+rotation = 0.013477
 scale = Vector2(2.77031, 0.0829148)
 shape = SubResource("RectangleShape2D_e83ry")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
-scale = Vector2(1, 1)
 texture = ExtResource("1_j804s")
 
 [node name="CTRLZ" parent="." instance=ExtResource("10_pvhi2")]
 position = Vector2(112, -32)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(-115, -10)
+position = Vector2(-115, -11)
 shape = SubResource("RectangleShape2D_pvhi2")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D2"]
@@ -210,24 +209,22 @@ scale = Vector2(0.0617284, 0.724138)
 texture = ExtResource("1_j804s")
 
 [node name="Spike10" parent="." instance=ExtResource("11_pvhi2")]
-position = Vector2(-86, -8)
+position = Vector2(-81, -8)
 rotation = 0.221415
+scale = Vector2(1.37854, 0.927426)
 
 [node name="Spike11" parent="." instance=ExtResource("11_pvhi2")]
-position = Vector2(-26, -2)
-rotation = -0.261799
-scale = Vector2(0.697461, 0.886457)
+position = Vector2(-33, -5)
+rotation = 0.0699749
+scale = Vector2(1.34753, 0.884997)
 
 [node name="Spike12" parent="." instance=ExtResource("11_pvhi2")]
-position = Vector2(12, -2)
-rotation = 0.261799
-scale = Vector2(0.637299, 0.818558)
+position = Vector2(15, -8)
+rotation = -0.442645
+scale = Vector2(1.01282, 0.744826)
 
 [node name="Spike13" parent="." instance=ExtResource("11_pvhi2")]
 position = Vector2(-111, 69)
-
-[node name="Tab2" parent="." instance=ExtResource("13_s34px")]
-position = Vector2(-59, 34)
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="."]
 position = Vector2(-56, -7)
@@ -239,7 +236,7 @@ scale = Vector2(0.172839, 0.0689655)
 texture = ExtResource("1_j804s")
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="."]
-position = Vector2(36, 38)
+position = Vector2(34, 38)
 shape = SubResource("RectangleShape2D_s34px")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D11"]
@@ -276,4 +273,31 @@ shape = SubResource("RectangleShape2D_xf5cy")
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D3"]
 position = Vector2(-6.07967e-06, 0.500002)
 scale = Vector2(0.222222, 1.77586)
+texture = ExtResource("1_j804s")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="."]
+position = Vector2(47, 38)
+shape = SubResource("RectangleShape2D_s34px")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D14"]
+position = Vector2(-2.86102e-06, 0)
+scale = Vector2(0.172839, 0.0689655)
+texture = ExtResource("1_j804s")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="."]
+position = Vector2(106, 13)
+shape = SubResource("RectangleShape2D_s34px")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D15"]
+position = Vector2(-2.86102e-06, 0)
+scale = Vector2(0.172839, 0.0689655)
+texture = ExtResource("1_j804s")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="."]
+position = Vector2(-58, 39)
+shape = SubResource("RectangleShape2D_s34px")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D16"]
+position = Vector2(-2.86102e-06, 0)
+scale = Vector2(0.172839, 0.0689655)
 texture = ExtResource("1_j804s")

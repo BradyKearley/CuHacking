@@ -6,6 +6,9 @@ const JUMP_VELOCITY = -200.0
 var facing_right = true # Track the player's facing direction
 var is_caps = false
 
+const COYOTE_TIME = 0.1  # 0.1 seconds of coyote time
+var coyote_timer = 0.0
+
 func change_size() -> void:
 	if is_caps:
 		$AnimatedSprite2D.scale /= 3
@@ -17,15 +20,24 @@ func change_size() -> void:
 		is_caps = true
 
 func _physics_process(delta: float) -> void:
+	# Handle coyote time
+	if is_on_floor():
+		coyote_timer = COYOTE_TIME  # Reset coyote timer when on ground
+	else:
+		coyote_timer -= delta  # Decrease timer when in the air
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
 	# Handle jump.
-	if Input.is_action_just_pressed("Jump") and is_on_floor():
+	if Input.is_action_just_pressed("Jump") and coyote_timer > 0:
 		velocity.y = JUMP_VELOCITY
 		$AudioStreamPlayer2D.play()
+		coyote_timer = 0  # Disable coyote time after jumping
+		
 	var direction := Input.get_axis("Left", "Right")
+	
 	if direction:
 		velocity.x = direction * SPEED
 		if direction > 0:

@@ -25,4 +25,3 @@ func _on_detector_body_exited(body: Node2D) -> void:
 
 func _on_timer_timeout() -> void:
 	get_tree().reload_current_scene()
-	print("FUCK")
