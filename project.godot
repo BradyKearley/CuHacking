@@ -21,6 +21,7 @@ AudioPlayer="*res://SFX/audio_player.tscn"
 Shiftvariable="*res://Scenes/shiftvariable.tscn"
 Volume="*res://Scenes/volume.tscn"
 Global="*res://Scenes/global.tscn"
+LevelManager="*res://Scenes/level_manager.tscn"
 
 [display]
 

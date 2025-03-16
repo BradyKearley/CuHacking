@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bsjy5emnth73v"]
+[gd_scene load_steps=14 format=3 uid="uid://dr2p5to024mvd"]
 
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_5fkoe"]
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="2_2py18"]
@@ -6,13 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="4_l4fe4"]
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="5_ce78g"]
 [ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="6_6836m"]
-[ext_resource type="PackedScene" uid="uid://wnjb8la2srov" path="res://Levels/level_two.tscn" id="7_2py18"]
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="7_lccb3"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="8_cjwru"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="9_o5w1d"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="10_jd0dm"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="11_3g6m8"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="12_afeaf"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="10_jd0dm"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="11_3g6m8"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="12_afeaf"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="13_jbsh1"]
 
 [node name="LevelOne2" type="StaticBody2D"]
@@ -88,7 +87,6 @@ texture = ExtResource("2_2py18")
 [node name="Node2D" parent="." instance=ExtResource("6_6836m")]
 position = Vector2(96, 52)
 scale = Vector2(0.1, 0.1)
-next_level = ExtResource("7_2py18")
 
 [node name="TopBar3" type="Sprite2D" parent="."]
 position = Vector2(35.5, -36.006)
