@@ -76,7 +76,7 @@ position = Vector2(-4, 55)
 position = Vector2(84, 55)
 
 [node name="PageUp3" parent="." instance=ExtResource("6_ibpgu")]
-position = Vector2(104, 14)
+position = Vector2(104.208, 18.8452)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
 position = Vector2(18, 38.0156)
@@ -84,13 +84,13 @@ scale = Vector2(0.271605, 0.724677)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
-position = Vector2(105, 39)
-scale = Vector2(0.271605, 0.724677)
+position = Vector2(105, 41.9471)
+scale = Vector2(0.271605, 0.661162)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="."]
-position = Vector2(62, 5.21904)
-scale = Vector2(0.271605, 0.620279)
+position = Vector2(62, 3.34492)
+scale = Vector2(0.271605, 0.55601)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="."]
@@ -117,15 +117,15 @@ skew = 0.0003227
 texture = ExtResource("2_kmqfq")
 
 [node name="Sprite2D14" type="Sprite2D" parent="."]
-position = Vector2(62, 23)
+position = Vector2(62.063, 19.2807)
 rotation = -1.5708
 scale = Vector2(0.008, -0.383369)
 skew = 0.0003227
 texture = ExtResource("2_kmqfq")
 
 [node name="Sprite2D11" type="Sprite2D" parent="."]
-position = Vector2(51.34, 9.84248)
-scale = Vector2(-0.00839499, 0.456022)
+position = Vector2(51.34, 8.04586)
+scale = Vector2(-0.00839499, 0.394069)
 texture = ExtResource("2_kmqfq")
 
 [node name="Sprite2D16" type="Sprite2D" parent="."]
@@ -139,9 +139,9 @@ scale = Vector2(-0.00839499, 0.198328)
 texture = ExtResource("2_kmqfq")
 
 [node name="Sprite2D12" type="Sprite2D" parent="."]
-position = Vector2(73.34, 5.2357)
+position = Vector2(73.34, 3.43908)
 rotation = 3.14159
-scale = Vector2(0.00839499, -0.618059)
+scale = Vector2(0.00839499, -0.556107)
 texture = ExtResource("2_kmqfq")
 
 [node name="Sprite2D13" type="Sprite2D" parent="."]
@@ -173,8 +173,8 @@ skew = 0.0003227
 texture = ExtResource("2_kmqfq")
 
 [node name="Sprite2D8" type="Sprite2D" parent="."]
-position = Vector2(94.34, 39.3276)
-scale = Vector2(-0.00839499, 0.724677)
+position = Vector2(94.34, 41.5678)
+scale = Vector2(-0.00839499, 0.647427)
 texture = ExtResource("2_kmqfq")
 
 [node name="Sprite2D9" type="Sprite2D" parent="."]
@@ -184,7 +184,7 @@ scale = Vector2(0.00839499, -0.724677)
 texture = ExtResource("2_kmqfq")
 
 [node name="Sprite2D10" type="Sprite2D" parent="."]
-position = Vector2(105.34, 18.3276)
+position = Vector2(105.392, 23.1207)
 rotation = -1.5708
 scale = Vector2(0.008, -0.390295)
 skew = 0.0003227
@@ -261,10 +261,10 @@ scale = Vector2(33.0427, 36.1765)
 zoom = Vector2(7, 7)
 
 [node name="Box" parent="." instance=ExtResource("15_kmqfq")]
-position = Vector2(28, 11)
+position = Vector2(29.2285, 11.1228)
 
 [node name="Box2" parent="." instance=ExtResource("15_kmqfq")]
-position = Vector2(53.5094, -21.8654)
+position = Vector2(41.2356, -21.1026)
 
 [node name="Spike" parent="." instance=ExtResource("16_757ny")]
 position = Vector2(41, 55)

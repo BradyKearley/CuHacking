@@ -185,20 +185,20 @@ scale = Vector2(0.00839499, -0.597207)
 texture = ExtResource("13_3eiat")
 
 [node name="Sprite2D28" type="Sprite2D" parent="WALLS"]
-position = Vector2(48.3341, 7.84724)
+position = Vector2(48.3341, 7.27889)
 rotation = 3.14159
-scale = Vector2(0.00839499, -0.177261)
+scale = Vector2(0.00839499, -0.196859)
 texture = ExtResource("13_3eiat")
 
 [node name="Sprite2D29" type="Sprite2D" parent="WALLS"]
-position = Vector2(31.1717, 3.13892)
+position = Vector2(31.1717, 1.8214)
 rotation = -1.57079
 scale = Vector2(0.00839499, -0.599933)
 texture = ExtResource("13_3eiat")
 
 [node name="Sprite2D30" type="Sprite2D" parent="WALLS"]
-position = Vector2(14.0946, 5.91017)
-scale = Vector2(0.00839499, -0.107199)
+position = Vector2(14.0946, 5.45807)
+scale = Vector2(0.00839499, -0.122789)
 texture = ExtResource("13_3eiat")
 
 [node name="Sprite2D31" type="Sprite2D" parent="WALLS"]
@@ -286,9 +286,9 @@ scale = Vector2(0.428097, 0.0610337)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="."]
-position = Vector2(31.246, 7.45252)
-scale = Vector2(0.428663, 0.167255)
-polygon = PackedVector2Array(-40.8363, -27.8457, -40.5, 29, -7.69053, 29, -5.0167, 29, 40.5, 29, 40.5, -29)
+position = Vector2(31.246, 6.83582)
+scale = Vector2(0.428663, 0.180417)
+polygon = PackedVector2Array(-40.4242, -29.7802, -40.5, 29, -7.69053, 29, -5.0167, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="."]
 position = Vector2(75.1218, -12.06)
@@ -302,9 +302,9 @@ scale = Vector2(0.428097, 0.0610337)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="."]
-position = Vector2(36.4395, -20.603)
+position = Vector2(36.4395, -21.9413)
 rotation = 1.5708
-scale = Vector2(0.305498, 0.0610337)
+scale = Vector2(0.284845, 0.0610337)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="."]
@@ -362,7 +362,7 @@ position = Vector2(-23.9191, 53.7941)
 position = Vector2(57.3868, 28.4614)
 
 [node name="Box" parent="." instance=ExtResource("13_ldig2")]
-position = Vector2(43.1661, -3.41732)
+position = Vector2(35.0177, -4.4371)
 
 [node name="Tab" parent="." instance=ExtResource("14_ldig2")]
-position = Vector2(73.0654, -17.7484)
+position = Vector2(65.3461, -18.084)
