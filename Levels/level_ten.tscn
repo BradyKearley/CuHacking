@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cytaxutapoe4h"]
+[gd_scene load_steps=15 format=3 uid="uid://cytaxutapoe4h"]
 
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_37kji"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_ldig2"]
@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="6_phqwr"]
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="7_mblkb"]
 [ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="8_7lci3"]
-[ext_resource type="PackedScene" uid="uid://sou6guusbxyr" path="res://Levels/levelfive.tscn" id="9_tmcvs"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="10_7j4wf"]
 [ext_resource type="PackedScene" uid="uid://b4nfsi88uoetg" path="res://Scenes/shift.tscn" id="12_hejg5"]
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="13_3eiat"]
@@ -58,7 +57,6 @@ texture = ExtResource("7_mblkb")
 [node name="Enter_Key" parent="." instance=ExtResource("8_7lci3")]
 position = Vector2(-38.1681, -20.788)
 scale = Vector2(0.1, 0.1)
-next_level = ExtResource("9_tmcvs")
 
 [node name="WALLS" type="Node2D" parent="."]
 

@@ -10,9 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://ynpyh1p7433o" path="res://Levels/level_seven.tscn" id="7_ya35v"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="8_neegv"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="9_h5g5v"]
-[ext_resource type="Script" path="res://Levels/x_button.gd" id="10_rsh85"]
-[ext_resource type="Script" path="res://Levels/_button.gd" id="11_pfs7p"]
-[ext_resource type="Script" path="res://Levels/big_button.gd" id="12_7mva0"]
+[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="10_rsh85"]
+[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="11_pfs7p"]
+[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="12_7mva0"]
 [ext_resource type="PackedScene" uid="uid://deeboqsgkdrlb" path="res://Scenes/caps_lock.tscn" id="13_drx44"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="16_670ls"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="17_ya35v"]
@@ -262,8 +262,8 @@ scale = Vector2(0.00839499, -0.339249)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="Sprite2D13" type="Sprite2D" parent="."]
-position = Vector2(49.6228, -10.4121)
-scale = Vector2(0.00839499, -0.10512)
+position = Vector2(49.6228, -9.73029)
+scale = Vector2(0.00839499, -0.128631)
 texture = ExtResource("2_o7w81")
 
 [node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="."]
@@ -272,8 +272,18 @@ scale = Vector2(0.00839499, -0.2386)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
-position = Vector2(49.6228, -10.4043)
-scale = Vector2(0.00839499, -0.105205)
+position = Vector2(49.6228, -9.73029)
+scale = Vector2(0.00839499, -0.128631)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="Sprite2D17" type="Sprite2D" parent="."]
+position = Vector2(16, -30.6826)
+scale = Vector2(0.00839499, -0.0925025)
+texture = ExtResource("2_o7w81")
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="."]
+position = Vector2(16, -30.6921)
+scale = Vector2(0.00839499, -0.101123)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [connection signal="pressed" from="TopBar2/Node2D/XButton" to="TopBar2/Node2D/XButton" method="_on_pressed"]
