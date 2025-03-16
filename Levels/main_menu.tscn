@@ -119,7 +119,7 @@ texture = ExtResource("8_qor8d")
 position = Vector2(71, 54)
 
 [node name="DownArrow" parent="." instance=ExtResource("11_1brcv")]
-position = Vector2(93, 54)
+position = Vector2(89, 54)
 
 [node name="Title" type="Sprite2D" parent="."]
 z_index = -4
