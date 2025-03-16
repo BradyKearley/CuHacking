@@ -10,9 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://ynpyh1p7433o" path="res://Levels/level_seven.tscn" id="7_ya35v"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="8_neegv"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="9_h5g5v"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="10_rsh85"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="11_pfs7p"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="12_7mva0"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="10_rsh85"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="11_pfs7p"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="12_7mva0"]
 [ext_resource type="PackedScene" uid="uid://deeboqsgkdrlb" path="res://Scenes/caps_lock.tscn" id="13_drx44"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="16_670ls"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="17_ya35v"]
@@ -56,14 +56,26 @@ texture = ExtResource("4_drx44")
 
 [node name="Wp9532787-windows-old-wallpapers" type="Sprite2D" parent="Background"]
 z_index = -5
-position = Vector2(-1.91666, 10.9689)
+position = Vector2(-5.39651, 8.10927)
 scale = Vector2(0.273524, 0.521354)
 texture = ExtResource("5_670ls")
 
 [node name="Sprite2D6" type="Sprite2D" parent="."]
-position = Vector2(22.4621, 33.6327)
+position = Vector2(27.4825, 33.6327)
 rotation = 3.14159
 scale = Vector2(0.00839499, -0.395023)
+texture = ExtResource("2_o7w81")
+
+[node name="Sprite2D22" type="Sprite2D" parent="."]
+position = Vector2(96.1697, 42.3959)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.564169)
+texture = ExtResource("2_o7w81")
+
+[node name="Sprite2D23" type="Sprite2D" parent="."]
+position = Vector2(96.1697, 42.3959)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.564169)
 texture = ExtResource("2_o7w81")
 
 [node name="Sprite2D15" type="Sprite2D" parent="."]
@@ -73,12 +85,18 @@ scale = Vector2(0.00839499, -0.130673)
 texture = ExtResource("2_o7w81")
 
 [node name="Sprite2D10" type="Sprite2D" parent="."]
-position = Vector2(45.7895, 29.1477)
-scale = Vector2(0.00839499, -0.2386)
+position = Vector2(45.7895, 29.6168)
+scale = Vector2(0.00839499, -0.254775)
 texture = ExtResource("2_o7w81")
 
 [node name="Sprite2D14" type="Sprite2D" parent="."]
 position = Vector2(82.8064, -13.1256)
+rotation = 1.5708
+scale = Vector2(0.00839499, -1.15582)
+texture = ExtResource("2_o7w81")
+
+[node name="Sprite2D21" type="Sprite2D" parent="."]
+position = Vector2(82.8302, -9.31596)
 rotation = 1.5708
 scale = Vector2(0.00839499, -1.15582)
 texture = ExtResource("2_o7w81")
@@ -159,13 +177,29 @@ rotation = 1.5708
 scale = Vector2(0.00839499, -0.413198)
 texture = ExtResource("2_o7w81")
 
+[node name="Sprite2D18" type="Sprite2D" parent="."]
+position = Vector2(34.9759, 46.7845)
+rotation = 1.5708
+scale = Vector2(0.00839499, -1.09962)
+texture = ExtResource("2_o7w81")
+
+[node name="Sprite2D19" type="Sprite2D" parent="."]
+position = Vector2(3.4337, 45.8796)
+scale = Vector2(0.00839499, -0.0442061)
+texture = ExtResource("2_o7w81")
+
+[node name="Sprite2D20" type="Sprite2D" parent="."]
+position = Vector2(66.5095, 41.5453)
+scale = Vector2(0.00839499, -0.176283)
+texture = ExtResource("2_o7w81")
+
 [node name="CapsLock" parent="." instance=ExtResource("13_drx44")]
 position = Vector2(105.971, 22.3378)
 
 [node name="Sprite2D11" type="Sprite2D" parent="."]
-position = Vector2(12.9635, 45.0197)
+position = Vector2(15.45, 45.0197)
 rotation = 1.5708
-scale = Vector2(0.00839499, -0.339249)
+scale = Vector2(0.00839499, -0.424991)
 texture = ExtResource("2_o7w81")
 
 [node name="Sprite2D12" type="Sprite2D" parent="."]
@@ -202,9 +236,9 @@ scale = Vector2(0.00839499, -0.130673)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="Sprite2D8" type="Sprite2D" parent="."]
-position = Vector2(57.1453, 35.7322)
+position = Vector2(56.1231, 36.7997)
 rotation = 1.5708
-scale = Vector2(0.00839499, -0.401311)
+scale = Vector2(0.00839499, -0.369408)
 texture = ExtResource("2_o7w81")
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
@@ -225,12 +259,6 @@ rotation = 1.5708
 scale = Vector2(0.00839499, -1.15582)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
-[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="."]
-position = Vector2(22.4621, 33.6327)
-rotation = 3.14159
-scale = Vector2(0.00839499, -0.395023)
-polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
-
 [node name="Sprite2D9" type="Sprite2D" parent="."]
 position = Vector2(105.915, 26.626)
 rotation = 1.5708
@@ -238,7 +266,7 @@ scale = Vector2(0.00839499, -0.344557)
 texture = ExtResource("2_o7w81")
 
 [node name="PageUp3" parent="." instance=ExtResource("16_670ls")]
-position = Vector2(86.5048, 54.4366)
+position = Vector2(84.3143, 54.0888)
 
 [node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="."]
 position = Vector2(105.915, 26.626)
@@ -247,33 +275,27 @@ scale = Vector2(0.00839499, -0.344557)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="Tab" parent="." instance=ExtResource("17_ya35v")]
-position = Vector2(12.5891, 40.5985)
+position = Vector2(16.4975, 40.7278)
 
 [node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="."]
-position = Vector2(57.1453, 35.7322)
+position = Vector2(55.9761, 36.8539)
 rotation = 1.5708
-scale = Vector2(0.00839499, -0.401311)
-polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
-
-[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="."]
-position = Vector2(12.9635, 45.0197)
-rotation = 1.5708
-scale = Vector2(0.00839499, -0.339249)
-polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+scale = Vector2(0.00839499, -0.373319)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -18.4258, 40.5, -29)
 
 [node name="Sprite2D13" type="Sprite2D" parent="."]
-position = Vector2(49.6228, -9.73029)
-scale = Vector2(0.00839499, -0.128631)
+position = Vector2(49.6228, -11.216)
+scale = Vector2(0.00839499, -0.0773992)
 texture = ExtResource("2_o7w81")
 
 [node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="."]
-position = Vector2(45.7895, 29.1477)
-scale = Vector2(0.00839499, -0.2386)
+position = Vector2(45.7895, 29.7623)
+scale = Vector2(0.00839499, -0.251846)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
-position = Vector2(49.6228, -9.73029)
-scale = Vector2(0.00839499, -0.128631)
+position = Vector2(49.6228, -11.3055)
+scale = Vector2(0.00839499, -0.0767168)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="Sprite2D17" type="Sprite2D" parent="."]
@@ -284,6 +306,46 @@ texture = ExtResource("2_o7w81")
 [node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="."]
 position = Vector2(16, -30.6921)
 scale = Vector2(0.00839499, -0.101123)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="."]
+position = Vector2(3.4337, 45.8796)
+scale = Vector2(0.00839499, -0.0442061)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="."]
+position = Vector2(34.8984, 46.7845)
+rotation = 1.5708
+scale = Vector2(0.00839499, -1.09904)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D17" type="CollisionPolygon2D" parent="."]
+position = Vector2(65.886, 41.7847)
+scale = Vector2(0.0229584, -0.180885)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, 23.2666, 40.5, -29)
+
+[node name="CollisionPolygon2D18" type="CollisionPolygon2D" parent="."]
+position = Vector2(82.797, -9.31596)
+rotation = 1.5708
+scale = Vector2(0.00839499, -1.15582)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D19" type="CollisionPolygon2D" parent="."]
+position = Vector2(96.1697, 42.5678)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.560464)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="."]
+position = Vector2(27.4825, 33.6327)
+rotation = 3.14159
+scale = Vector2(0.00839499, -0.395023)
+polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="."]
+position = Vector2(15.45, 45.0197)
+rotation = 1.5708
+scale = Vector2(0.00839499, -0.424991)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [connection signal="pressed" from="TopBar2/Node2D/XButton" to="TopBar2/Node2D/XButton" method="_on_pressed"]
