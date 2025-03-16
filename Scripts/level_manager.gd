@@ -9,7 +9,7 @@ var solo_levels = [
 	"res://Levels/levelfive.tscn",
 	"res://Levels/level_six.tscn",
 	"res://Levels/level_nine.tscn",
-	"res://Levels/level_seven.tscn",
+	"res://Levels/og_level_seven.tscn",
 	"res://Levels/level_ten.tscn",
 	"res://Levels/level_something.tscn"
 ]

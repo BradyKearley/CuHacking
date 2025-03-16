@@ -1,8 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://di2ppmsvb0tg6"]
 
 [ext_resource type="Script" uid="uid://wshhrvhspqfm" path="res://Scripts/ball.gd" id="1_d60mj"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ij5cq"]
+[ext_resource type="Texture2D" uid="uid://ddrgdv1kvg7jg" path="res://Art/Other/disc.png" id="2_ij5cq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_376qj"]
 radius = 7.0
@@ -14,8 +13,9 @@ radius = 8.0
 script = ExtResource("1_d60mj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(10, 10)
-texture = SubResource("PlaceholderTexture2D_ij5cq")
+position = Vector2(-9.53674e-07, 0)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("2_ij5cq")
 
 [node name="Collider" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_376qj")
