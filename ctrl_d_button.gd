@@ -1,5 +1,7 @@
 extends StaticBody2D
 var player: Node2D
+var pressed = false
+@export var player2: PackedScene
 # Set textures here maybe
 func press(body: Node2D) -> void:
 	# Change if shift signal 
@@ -25,4 +27,9 @@ func _on_detector_body_exited(body: Node2D) -> void:
 
 func _on_timer_timeout() -> void:
 	$Timer.wait_time = .3  # Move the player
-	get_tree().change_scene_to_file("res://Levels/level_one.tscn")
+	if not pressed:
+		pressed = true
+		var new_player = player2.instantiate()
+		get_parent().add_child(new_player)  # Add Player2 to the scene
+		new_player.global_position = global_position + Vector2(-38, 0)
+	
