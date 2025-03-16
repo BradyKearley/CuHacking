@@ -122,6 +122,7 @@ offset_right = 132.0
 offset_bottom = 182.0
 scale = Vector2(0.418794, 0.40766)
 script = ExtResource("10_jd0dm")
+metadata/_edit_use_anchors_ = true
 
 [node name="-Button" type="Button" parent="TopBar3/Node2D"]
 modulate = Color(1, 1, 1, 0)
@@ -134,6 +135,7 @@ offset_right = 12.0
 offset_bottom = 175.0
 scale = Vector2(0.418794, 0.40766)
 script = ExtResource("11_3g6m8")
+metadata/_edit_use_anchors_ = true
 
 [node name="BigButton" type="Button" parent="TopBar3/Node2D"]
 modulate = Color(1, 1, 1, 0)
@@ -147,6 +149,7 @@ offset_bottom = 181.0
 scale = Vector2(0.418794, 0.40766)
 toggle_mode = true
 script = ExtResource("12_afeaf")
+metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="TopBar3/Node2D/BigButton"]
 position = Vector2(-2566.51, 1873.91)

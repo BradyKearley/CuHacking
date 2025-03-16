@@ -15,13 +15,14 @@ var solo_levels = [
 ]
 
 var duo_levels = [
-	"res://Levels//DuoLevels/duo_level_one.tscn",
-	"res://Levels//DuoLevels/duo_level_two.tscn"
+	"res://Levels//DuoLevels/duo_level_1.tscn",
+	"res://Levels//DuoLevels/duo_level_2.tscn"
 ]
 
 var level_index = 0
 
 func load_next_level():
+	level_index += 1
 	if Global.duo:
 		if level_index < duo_levels.size():
 			get_tree().change_scene_to_file(duo_levels[level_index])
