@@ -28,6 +28,7 @@ func _on_detector_body_exited(body: Node2D) -> void:
 func _on_timer_timeout() -> void:
 	$Timer.wait_time = .3  # Move the player
 	if not pressed:
+		Global.duo = true
 		pressed = true
 		var new_player = player2.instantiate()
 		get_parent().add_child(new_player)  # Add Player2 to the scene
