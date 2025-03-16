@@ -10,9 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="9_mngfw"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="10_4yf73"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="11_6stoj"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="12_mce3w"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="13_opkqd"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="14_sirpb"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="12_mce3w"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="13_opkqd"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="14_sirpb"]
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="15_kmqfq"]
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="16_757ny"]
 
