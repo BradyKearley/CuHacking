@@ -10,9 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="9_8klqi"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="10_jvfuv"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="11_ssudd"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="12_qd0og"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="13_4w2q2"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="14_0m1ch"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="12_qd0og"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="13_4w2q2"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="14_0m1ch"]
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="16_3s3r2"]
 [ext_resource type="PackedScene" uid="uid://bjxkrkvfm1oal" path="res://Scenes/pg_down.tscn" id="16_36ieg"]
 
@@ -47,14 +47,12 @@ scale = Vector2(2.02469, 0.0290951)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="Background" type="Sprite2D" parent="."]
-visible = false
 z_index = -4
 position = Vector2(35, 10.5)
 scale = Vector2(0.521739, 0.276353)
 texture = ExtResource("4_ryf2d")
 
 [node name="Wp9532787-windows-old-wallpapers" type="Sprite2D" parent="Background"]
-visible = false
 z_index = -5
 position = Vector2(-1.91666, 10.9689)
 scale = Vector2(0.273524, 0.521354)
