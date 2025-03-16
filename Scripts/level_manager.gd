@@ -15,7 +15,7 @@ var solo_levels = [
 ]
 
 var duo_levels = [
-	"res://Levels//DuoLevels/duo_level_1.tscn",
+	"res://Levels//DuoLevels/duo_level_1.tscn","res://Levels//DuoLevels/duo_level_4.tscn",
 	"res://Levels//DuoLevels/duo_level_2.tscn"
 ]
 
