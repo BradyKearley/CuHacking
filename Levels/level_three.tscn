@@ -1,10 +1,14 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=17 format=3 uid="uid://dg8y4y0gt73ln"]
+=======
+[gd_scene load_steps=16 format=3 uid="uid://c6m7xbkyvfq3x"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_2kwn0"]
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_kkbwx"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_a1fw5"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="3_ch07b"]
-[ext_resource type="PackedScene" uid="uid://bjxkrkvfm1oal" path="res://Scenes/pg_down.tscn" id="5_a1fw5"]
+[ext_resource type="PackedScene" path="res://Scenes/pg_down.tscn" id="5_a1fw5"]
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="5_ch07b"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="6_1y2jm"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="7_kkbwx"]
@@ -54,7 +58,7 @@ position = Vector2(-27, 54)
 position = Vector2(76, 25)
 
 [node name="PageUp3" parent="." instance=ExtResource("3_ch07b")]
-position = Vector2(57, 46)
+position = Vector2(46, 46)
 
 [node name="PageUp2" parent="." instance=ExtResource("3_ch07b")]
 position = Vector2(-6, 29)
@@ -70,7 +74,7 @@ scale = Vector2(0.197531, 0.017612)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="."]
-position = Vector2(57, 50.1129)
+position = Vector2(46, 50)
 scale = Vector2(0.197531, 0.0175197)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
@@ -130,7 +134,7 @@ scale = Vector2(0.00839499, -0.275757)
 texture = ExtResource("1_2kwn0")
 
 [node name="Sprite2D12" type="Sprite2D" parent="."]
-position = Vector2(57.0831, 50.2859)
+position = Vector2(46, 50)
 rotation = 1.5708
 scale = Vector2(0.00839499, -0.275757)
 texture = ExtResource("1_2kwn0")

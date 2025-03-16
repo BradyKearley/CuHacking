@@ -32,8 +32,8 @@ scale = Vector2(2.02469, 0.0366385)
 texture = ExtResource("2_2py18")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(7, 38)
-scale = Vector2(-0.00839499, 0.724677)
+position = Vector2(7, 12.8166)
+scale = Vector2(-0.00839499, 1.59307)
 texture = ExtResource("2_2py18")
 
 [node name="Player" parent="." instance=ExtResource("3_t50p6")]
@@ -68,19 +68,12 @@ texture = ExtResource("2_2py18")
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
 position = Vector2(18, 38.0156)
 scale = Vector2(0.271605, 0.724677)
-polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+polygon = PackedVector2Array(-40.5, -97.9962, -40.5, -14.7605, -40.5, 29, 40.5, 29, 40.5, -97.9962)
 
 [node name="Sprite2D5" type="Sprite2D" parent="."]
-position = Vector2(29, 38)
+position = Vector2(28.9999, 12.878)
 rotation = 3.14159
-scale = Vector2(0.00839499, -0.724677)
-texture = ExtResource("2_2py18")
-
-[node name="Sprite2D6" type="Sprite2D" parent="."]
-position = Vector2(18, 17)
-rotation = -1.5708
-scale = Vector2(0.008, -0.390295)
-skew = 0.0003227
+scale = Vector2(0.00839499, -1.59095)
 texture = ExtResource("2_2py18")
 
 [node name="Node2D" parent="." instance=ExtResource("6_6836m")]

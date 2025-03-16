@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=17 format=3 uid="uid://bi4xo88q34hhg"]
+=======
+[gd_scene load_steps=17 format=3 uid="uid://cvsrlv7a4fkkb"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_mnajx"]
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="2_kmqfq"]
@@ -14,7 +18,11 @@
 [ext_resource type="Script" path="res://Levels/_button.gd" id="13_opkqd"]
 [ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="14_sirpb"]
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="15_kmqfq"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="16_3w6oc"]
+=======
+[ext_resource type="Texture2D" uid="uid://c0g0jq2xwvcrf" path="res://Art/help.png" id="16_3w6oc"]
+>>>>>>> Stashed changes
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="16_757ny"]
 
 [node name="LevelTwo" type="StaticBody2D"]
@@ -271,7 +279,14 @@ position = Vector2(41, 55)
 [node name="Spike2" parent="." instance=ExtResource("16_757ny")]
 position = Vector2(64, 55)
 
+<<<<<<< Updated upstream
 [node name="Shader" parent="." instance=ExtResource("16_3w6oc")]
+=======
+[node name="Sprite2D20" type="Sprite2D" parent="."]
+position = Vector2(-26, 9)
+scale = Vector2(0.0695353, 0.0695353)
+texture = ExtResource("16_3w6oc")
+>>>>>>> Stashed changes
 
 [connection signal="pressed" from="TopBar3/Node2D/XButton" to="TopBar3/Node2D/XButton" method="_on_pressed"]
 [connection signal="pressed" from="TopBar3/Node2D/-Button" to="TopBar3/Node2D/-Button" method="_on_pressed"]
