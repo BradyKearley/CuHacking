@@ -117,7 +117,7 @@ scale = Vector2(0.273524, 0.521354)
 texture = ExtResource("8_qor8d")
 
 [node name="UpArrow" parent="." instance=ExtResource("10_yw3yt")]
-position = Vector2(66, 54)
+position = Vector2(71, 54)
 
 [node name="DownArrow" parent="." instance=ExtResource("11_1brcv")]
 position = Vector2(93, 54)
