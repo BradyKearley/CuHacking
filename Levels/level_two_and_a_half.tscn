@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="8_61nn0"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="9_m1ife"]
 [ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="10_j8toi"]
-[ext_resource type="PackedScene" uid="uid://bjxkrkvfm1oal" path="res://Scenes/pg_down.tscn" id="12_n0dej"]
+[ext_resource type="PackedScene" path="res://Scenes/pg_down.tscn" id="12_n0dej"]
 [ext_resource type="Script" path="res://Levels/x_button.gd" id="13_gxx7f"]
 [ext_resource type="Script" path="res://Levels/_button.gd" id="14_iggat"]
 [ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="15_gxx7f"]
