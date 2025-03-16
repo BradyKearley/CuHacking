@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cis68rktnwlv7"]
+[gd_scene load_steps=18 format=3 uid="uid://cis68rktnwlv7"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_5qvx8"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_hllw6"]
@@ -14,6 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://dkgqvrnivug6e" path="res://Scenes/down_arrow.tscn" id="11_1brcv"]
 [ext_resource type="AudioStream" uid="uid://d1cv7lywpbfh4" path="res://SFX/main-menu.wav" id="13_mkm6k"]
 [ext_resource type="PackedScene" uid="uid://d2avxn1dp7b54" path="res://Scenes/ctrl_d_button.tscn" id="14_y558p"]
+[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="15_gju5e"]
+[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="16_7b3dh"]
+[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="17_68l63"]
 
 [node name="Main Menu" type="StaticBody2D"]
 
@@ -40,10 +43,6 @@ texture = ExtResource("1_5qvx8")
 [node name="Player" parent="." instance=ExtResource("2_hllw6")]
 position = Vector2(-38, 51)
 scale = Vector2(0.5, 0.5)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(34, 13)
-zoom = Vector2(7, 7)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-48, 59, -48, -33, 116, -33, 116, 60, 122, 60, 121, -39, -48, -39, -60, -39, -59, 59)
@@ -133,3 +132,55 @@ autoplay = true
 
 [node name="Ctrl D Button" parent="." instance=ExtResource("14_y558p")]
 position = Vector2(39, 54)
+
+[node name="Node2D" type="Node2D" parent="."]
+scale = Vector2(0.418795, 0.40766)
+
+[node name="XButton" type="Button" parent="Node2D"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.973
+anchor_right = 0.996
+anchor_bottom = 0.87
+offset_left = 279.0
+offset_top = -96.0
+offset_right = 295.0
+offset_bottom = -65.0
+scale = Vector2(0.418794, 0.40766)
+script = ExtResource("15_gju5e")
+
+[node name="-Button" type="Button" parent="Node2D"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.973
+anchor_right = 0.996
+anchor_bottom = 0.87
+offset_left = 258.0
+offset_top = -96.0
+offset_right = 276.0
+offset_bottom = -65.0
+scale = Vector2(0.418794, 0.40766)
+script = ExtResource("16_7b3dh")
+
+[node name="BigButton" type="Button" parent="Node2D"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.973
+anchor_right = 0.996
+anchor_bottom = 0.87
+offset_left = 267.0
+offset_top = -96.0
+offset_right = 291.0
+offset_bottom = -65.0
+scale = Vector2(0.418794, 0.40766)
+toggle_mode = true
+script = ExtResource("17_68l63")
+
+[node name="Camera2D" type="Camera2D" parent="Node2D/BigButton"]
+position = Vector2(-443.69, 313.716)
+scale = Vector2(5.70162, 6.01733)
+zoom = Vector2(7, 7)
+
+[connection signal="pressed" from="Node2D/XButton" to="Node2D/XButton" method="_on_pressed"]
+[connection signal="pressed" from="Node2D/-Button" to="Node2D/-Button" method="_on_pressed"]
+[connection signal="toggled" from="Node2D/BigButton" to="Node2D/BigButton" method="_on_toggled"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cytaxutapoe4h"]
+[gd_scene load_steps=18 format=3 uid="uid://cytaxutapoe4h"]
 
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_37kji"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_ldig2"]
@@ -14,6 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="13_37kji"]
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="13_ldig2"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="14_ldig2"]
+[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="15_1lrma"]
+[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="16_phqwr"]
+[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="17_mblkb"]
 
 [node name="LevelOne2" type="StaticBody2D"]
 script = ExtResource("1_37kji")
@@ -313,10 +316,6 @@ rotation = 1.5708
 scale = Vector2(0.386697, 0.0644367)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(34, 13)
-zoom = Vector2(7, 7)
-
 [node name="Spike" parent="." instance=ExtResource("13_37kji")]
 position = Vector2(83.8722, 54.3774)
 
@@ -366,3 +365,55 @@ position = Vector2(35.0177, -4.4371)
 
 [node name="Tab" parent="." instance=ExtResource("14_ldig2")]
 position = Vector2(65.3461, -18.084)
+
+[node name="Node2D" type="Node2D" parent="."]
+scale = Vector2(0.418795, 0.40766)
+
+[node name="XButton" type="Button" parent="Node2D"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.973
+anchor_right = 0.996
+anchor_bottom = 0.87
+offset_left = 279.0
+offset_top = -96.0
+offset_right = 297.0
+offset_bottom = -65.0
+scale = Vector2(0.418794, 0.40766)
+script = ExtResource("15_1lrma")
+
+[node name="-Button" type="Button" parent="Node2D"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.973
+anchor_right = 0.996
+anchor_bottom = 0.87
+offset_left = 258.0
+offset_top = -96.0
+offset_right = 276.0
+offset_bottom = -65.0
+scale = Vector2(0.418794, 0.40766)
+script = ExtResource("16_phqwr")
+
+[node name="BigButton" type="Button" parent="Node2D"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.973
+anchor_right = 0.996
+anchor_bottom = 0.87
+offset_left = 267.0
+offset_top = -96.0
+offset_right = 291.0
+offset_bottom = -67.0
+scale = Vector2(0.418794, 0.40766)
+toggle_mode = true
+script = ExtResource("17_mblkb")
+
+[node name="Camera2D" type="Camera2D" parent="Node2D/BigButton"]
+position = Vector2(-443.69, 313.716)
+scale = Vector2(5.70162, 6.01733)
+zoom = Vector2(7, 7)
+
+[connection signal="pressed" from="Node2D/XButton" to="Node2D/XButton" method="_on_pressed"]
+[connection signal="pressed" from="Node2D/-Button" to="Node2D/-Button" method="_on_pressed"]
+[connection signal="toggled" from="Node2D/BigButton" to="Node2D/BigButton" method="_on_toggled"]
