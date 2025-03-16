@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cytaxutapoe4h"]
+[gd_scene load_steps=19 format=3 uid="uid://cytaxutapoe4h"]
 
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_37kji"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_ldig2"]
@@ -14,9 +14,10 @@
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="13_37kji"]
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="13_ldig2"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="14_ldig2"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="15_1lrma"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="16_phqwr"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="17_mblkb"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="15_1lrma"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="16_phqwr"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="17_mblkb"]
+[ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="18_phqwr"]
 
 [node name="LevelOne2" type="StaticBody2D"]
 script = ExtResource("1_37kji")
@@ -413,6 +414,8 @@ script = ExtResource("17_mblkb")
 position = Vector2(-443.69, 313.716)
 scale = Vector2(5.70162, 6.01733)
 zoom = Vector2(7, 7)
+
+[node name="Shader" parent="." instance=ExtResource("18_phqwr")]
 
 [connection signal="pressed" from="Node2D/XButton" to="Node2D/XButton" method="_on_pressed"]
 [connection signal="pressed" from="Node2D/-Button" to="Node2D/-Button" method="_on_pressed"]

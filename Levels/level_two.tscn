@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://wnjb8la2srov"]
+[gd_scene load_steps=15 format=3 uid="uid://wnjb8la2srov"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_f4581"]
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_knhb2"]
@@ -10,9 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="8_fw6be"]
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="9_lvawp"]
 [ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="10_lvawp"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="12_pqfy0"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="13_twpir"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="14_po2ij"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="12_pqfy0"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="13_twpir"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="14_po2ij"]
+[ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="14_pqfy0"]
 
 [node name="LevelTwo" type="StaticBody2D"]
 script = ExtResource("1_knhb2")
@@ -155,6 +156,8 @@ script = ExtResource("14_po2ij")
 position = Vector2(-2566.51, 1873.91)
 scale = Vector2(33.0427, 36.1765)
 zoom = Vector2(7, 7)
+
+[node name="Shader" parent="." instance=ExtResource("14_pqfy0")]
 
 [connection signal="pressed" from="TopBar3/Node2D/XButton" to="TopBar3/Node2D/XButton" method="_on_pressed"]
 [connection signal="pressed" from="TopBar3/Node2D/-Button" to="TopBar3/Node2D/-Button" method="_on_pressed"]

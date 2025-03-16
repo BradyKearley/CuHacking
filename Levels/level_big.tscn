@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cx6to4w2esgnk"]
+[gd_scene load_steps=10 format=3 uid="uid://cx6to4w2esgnk"]
 
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_dwhiq"]
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="2_wpeo3"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="6_ffbg6"]
 [ext_resource type="Texture2D" uid="uid://dl6q8dygbvr2h" path="res://Art/Screenshot 2025-03-15 122620.png" id="7_svv3f"]
 [ext_resource type="Texture2D" uid="uid://cab4hi6le3ngk" path="res://Art/wp9532787-windows-old-wallpapers.jpg" id="8_pura1"]
+[ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="9_wpeo3"]
 
 [node name="LevelBig" type="StaticBody2D"]
 script = ExtResource("1_dwhiq")
@@ -66,3 +67,5 @@ texture = ExtResource("8_pura1")
 position = Vector2(32, 105)
 scale = Vector2(4.04938, 0.02)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="Shader" parent="." instance=ExtResource("9_wpeo3")]

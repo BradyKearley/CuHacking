@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://clehk6ddncj30"]
+[gd_scene load_steps=17 format=3 uid="uid://clehk6ddncj30"]
 
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_36ieg"]
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="2_jd3x0"]
@@ -10,11 +10,12 @@
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="9_8klqi"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="10_jvfuv"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="11_ssudd"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="12_qd0og"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="13_4w2q2"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="14_0m1ch"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="12_qd0og"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="13_4w2q2"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="14_0m1ch"]
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="16_3s3r2"]
 [ext_resource type="PackedScene" uid="uid://bjxkrkvfm1oal" path="res://Scenes/pg_down.tscn" id="16_36ieg"]
+[ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="16_jd3x0"]
 
 [node name="LevelTwo" type="StaticBody2D"]
 script = ExtResource("1_36ieg")
@@ -233,6 +234,8 @@ position = Vector2(46.6814, -0.916492)
 
 [node name="PgDown2" parent="." instance=ExtResource("16_36ieg")]
 position = Vector2(9.45913, -0.859924)
+
+[node name="Shader" parent="." instance=ExtResource("16_jd3x0")]
 
 [connection signal="pressed" from="TopBar3/Node2D/XButton" to="TopBar3/Node2D/XButton" method="_on_pressed"]
 [connection signal="pressed" from="TopBar3/Node2D/-Button" to="TopBar3/Node2D/-Button" method="_on_pressed"]

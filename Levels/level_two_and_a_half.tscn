@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cj8v8ucwu8u65"]
+[gd_scene load_steps=16 format=3 uid="uid://cj8v8ucwu8u65"]
 
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_u64ry"]
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="2_n0dej"]
@@ -11,9 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="9_m1ife"]
 [ext_resource type="PackedScene" uid="uid://d158jx7vacq23" path="res://Scenes/enter_key.tscn" id="10_j8toi"]
 [ext_resource type="PackedScene" uid="uid://bjxkrkvfm1oal" path="res://Scenes/pg_down.tscn" id="12_n0dej"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="13_gxx7f"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="14_iggat"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="15_rcm5k"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="13_gxx7f"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="14_iggat"]
+[ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="15_gxx7f"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="15_rcm5k"]
 
 [node name="LevelTwoAndAHalf" type="StaticBody2D"]
 script = ExtResource("1_u64ry")
@@ -196,6 +197,8 @@ script = ExtResource("15_rcm5k")
 position = Vector2(-2566.51, 1873.91)
 scale = Vector2(33.0427, 36.1765)
 zoom = Vector2(7, 7)
+
+[node name="Shader" parent="." instance=ExtResource("15_gxx7f")]
 
 [connection signal="pressed" from="TopBar3/Node2D/XButton" to="TopBar3/Node2D/XButton" method="_on_pressed"]
 [connection signal="pressed" from="TopBar3/Node2D/-Button" to="TopBar3/Node2D/-Button" method="_on_pressed"]

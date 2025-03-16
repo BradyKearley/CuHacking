@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://ynpyh1p7433o"]
+[gd_scene load_steps=20 format=3 uid="uid://ynpyh1p7433o"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_e4eo7"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_1fpnw"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="11_4ekwb"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="12_hgi5x"]
 [ext_resource type="PackedScene" uid="uid://b4nfsi88uoetg" path="res://Scenes/shift.tscn" id="13_bxjvh"]
+[ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="14_plwv7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hgi5x"]
 size = Vector2(17, 2)
@@ -236,3 +237,5 @@ position = Vector2(133, 22)
 
 [node name="Spike7" parent="Node2D2" instance=ExtResource("11_4ekwb")]
 position = Vector2(157, 22)
+
+[node name="Shader" parent="." instance=ExtResource("14_plwv7")]

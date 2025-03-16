@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://chudpv4rwpoxn"]
+[gd_scene load_steps=20 format=3 uid="uid://chudpv4rwpoxn"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_e4eo7"]
 [ext_resource type="PackedScene" uid="uid://dru4jk631bc6q" path="res://Player/player.tscn" id="2_1fpnw"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="11_4ekwb"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="12_hgi5x"]
 [ext_resource type="PackedScene" uid="uid://b4nfsi88uoetg" path="res://Scenes/shift.tscn" id="13_bxjvh"]
+[ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="14_e31b6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hgi5x"]
 size = Vector2(17, 2)
@@ -247,3 +248,5 @@ position = Vector2(78, -11)
 
 [node name="Box6" parent="." instance=ExtResource("9_hda3h")]
 position = Vector2(72, -19)
+
+[node name="Shader" parent="." instance=ExtResource("14_e31b6")]

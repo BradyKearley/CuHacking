@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://sou6guusbxyr"]
+[gd_scene load_steps=18 format=3 uid="uid://sou6guusbxyr"]
 
 [ext_resource type="Script" uid="uid://dk5hhqoso87hp" path="res://Levels/levelfive.gd" id="1_kagpc"]
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="2_o7w81"]
@@ -9,11 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="7_kagpc"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="8_neegv"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="9_h5g5v"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="10_rsh85"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="11_pfs7p"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="12_7mva0"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="10_rsh85"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="11_pfs7p"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="12_7mva0"]
 [ext_resource type="PackedScene" uid="uid://deeboqsgkdrlb" path="res://Scenes/caps_lock.tscn" id="13_drx44"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="16_670ls"]
+[ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="17_kagpc"]
 [ext_resource type="PackedScene" uid="uid://cwm11gabt28ak" path="res://Scenes/tab.tscn" id="17_ya35v"]
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="18_kagpc"]
 
@@ -345,6 +346,8 @@ position = Vector2(15.45, 45.0197)
 rotation = 1.5708
 scale = Vector2(0.00839499, -0.424991)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="Shader" parent="." instance=ExtResource("17_kagpc")]
 
 [connection signal="pressed" from="TopBar2/Node2D/XButton" to="TopBar2/Node2D/XButton" method="_on_pressed"]
 [connection signal="pressed" from="TopBar2/Node2D/-Button" to="TopBar2/Node2D/-Button" method="_on_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b6kja2cejc7jh"]
+[gd_scene load_steps=18 format=3 uid="uid://b6kja2cejc7jh"]
 
 [ext_resource type="Script" uid="uid://dk5hhqoso87hp" path="res://Levels/levelfive.gd" id="1_pvodr"]
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="2_l6b3x"]
@@ -9,11 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="8_csnux"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="9_20o77"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="10_a1br4"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="11_pnqqs"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="12_lg4hy"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="13_fidjh"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="11_pnqqs"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="12_lg4hy"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="13_fidjh"]
 [ext_resource type="PackedScene" uid="uid://deeboqsgkdrlb" path="res://Scenes/caps_lock.tscn" id="14_xgj8h"]
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="16_gsqvl"]
+[ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="17_tyc05"]
 [ext_resource type="PackedScene" uid="uid://ddkx2em3bw8xa" path="res://Levels/spike.tscn" id="18_pvodr"]
 [ext_resource type="PackedScene" uid="uid://8101w0wk1pjw" path="res://Player/player_2.tscn" id="18_tc00o"]
 
@@ -203,6 +204,8 @@ polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 position = Vector2(64.8153, -10.4386)
 scale = Vector2(0.00839499, -0.103861)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
+
+[node name="Shader" parent="." instance=ExtResource("17_tyc05")]
 
 [connection signal="pressed" from="TopBar2/Node2D/XButton" to="TopBar2/Node2D/XButton" method="_on_pressed"]
 [connection signal="pressed" from="TopBar2/Node2D/-Button" to="TopBar2/Node2D/-Button" method="_on_pressed"]
