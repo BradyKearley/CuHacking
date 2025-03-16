@@ -16,7 +16,6 @@
 [ext_resource type="PackedScene" uid="uid://d2avxn1dp7b54" path="res://Scenes/ctrl_d_button.tscn" id="14_y558p"]
 
 [node name="Main Menu" type="StaticBody2D"]
-position = Vector2(1, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(34, 59)

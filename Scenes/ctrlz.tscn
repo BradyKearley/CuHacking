@@ -1,7 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://ckhnkrcafhmqm"]
+[gd_scene load_steps=10 format=3 uid="uid://ckhnkrcafhmqm"]
 
 [ext_resource type="Script" uid="uid://crlr32uwd7qni" path="res://Scripts/ctrlz.gd" id="1_jqof2"]
-[ext_resource type="Texture2D" uid="uid://di7ymu1dtx01g" path="res://Art/Other/spikes 4x1.png" id="2_jqof2"]
+[ext_resource type="Texture2D" uid="uid://cjhctnws63i54" path="res://Art/Buttons/ctrl-z keycap button-Sheet.png" id="2_jqof2"]
 [ext_resource type="AudioStream" uid="uid://cosc81evi4ud" path="res://SFX/spacebar-click-keyboard-199448_iju6vpxH.mp3" id="3_62jh6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0pquk"]
@@ -13,36 +13,27 @@ size = Vector2(23, 5.875)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_subnp"]
 size = Vector2(23, 10)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6wgmb"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_qc302"]
 atlas = ExtResource("2_jqof2")
-region = Rect2(0, 0, 256, 128)
+region = Rect2(256, 0, 256, 256)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_s607c"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_62jh6"]
 atlas = ExtResource("2_jqof2")
-region = Rect2(256, 0, 256, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_504vv"]
-atlas = ExtResource("2_jqof2")
-region = Rect2(512, 0, 256, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jxt72"]
-atlas = ExtResource("2_jqof2")
-region = Rect2(768, 0, 256, 128)
+region = Rect2(0, 0, 256, 256)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3jls2"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6wgmb")
+"texture": SubResource("AtlasTexture_qc302")
+}],
+"loop": true,
+"name": &"Down",
+"speed": 5.0
 }, {
+"frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_s607c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_504vv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jxt72")
+"texture": SubResource("AtlasTexture_62jh6")
 }],
 "loop": true,
 "name": &"Up",
@@ -72,7 +63,7 @@ shape = SubResource("RectangleShape2D_subnp")
 position = Vector2(0.25, -3.875)
 scale = Vector2(0.0917969, 0.124023)
 sprite_frames = SubResource("SpriteFrames_3jls2")
-animation = &"Down"
+animation = &"Up"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.1

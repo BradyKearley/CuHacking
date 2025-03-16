@@ -104,7 +104,7 @@ shape = SubResource("RectangleShape2D_e83ry")
 texture = ExtResource("1_j804s")
 
 [node name="CTRLZ" parent="." instance=ExtResource("10_pvhi2")]
-position = Vector2(112, -32)
+position = Vector2(114, -33)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(-115, -11)
