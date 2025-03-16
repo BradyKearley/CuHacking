@@ -14,7 +14,7 @@
 [ext_resource type="Script" path="res://Levels/x_button.gd" id="13_gxx7f"]
 [ext_resource type="Script" path="res://Levels/_button.gd" id="14_iggat"]
 [ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="15_gxx7f"]
-[ext_resource type="Script" path="res://Levels/big_button.gd" id="15_rcm5k"]
+[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="15_rcm5k"]
 
 [node name="LevelTwoAndAHalf" type="StaticBody2D"]
 script = ExtResource("1_u64ry")

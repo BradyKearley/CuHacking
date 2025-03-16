@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="9_h5g5v"]
 [ext_resource type="Script" path="res://Levels/x_button.gd" id="10_rsh85"]
 [ext_resource type="Script" path="res://Levels/_button.gd" id="11_pfs7p"]
-[ext_resource type="Script" path="res://Levels/big_button.gd" id="12_7mva0"]
+[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="12_7mva0"]
 [ext_resource type="PackedScene" uid="uid://deeboqsgkdrlb" path="res://Scenes/caps_lock.tscn" id="13_drx44"]
 [ext_resource type="PackedScene" uid="uid://ciqe1jp0n4yvy" path="res://Scenes/page_up.tscn" id="16_670ls"]
 [ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="17_kagpc"]

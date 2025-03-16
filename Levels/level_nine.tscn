@@ -15,7 +15,7 @@
 [ext_resource type="Script" path="res://Levels/x_button.gd" id="14_82dxv"]
 [ext_resource type="PackedScene" uid="uid://b4nfsi88uoetg" path="res://Scenes/shift.tscn" id="14_il148"]
 [ext_resource type="Script" path="res://Levels/_button.gd" id="15_dqtfw"]
-[ext_resource type="Script" path="res://Levels/big_button.gd" id="16_v7mfa"]
+[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="16_v7mfa"]
 [ext_resource type="PackedScene" uid="uid://cvgwcj1uch7ji" path="res://Scenes/Shader.tscn" id="17_dqtfw"]
 
 [node name="LevelOne" type="StaticBody2D"]
