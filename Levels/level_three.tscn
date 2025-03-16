@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=17 format=3 uid="uid://dg8y4y0gt73ln"]
-=======
-[gd_scene load_steps=16 format=3 uid="uid://c6m7xbkyvfq3x"]
->>>>>>> Stashed changes
+[gd_scene load_steps=17 format=3 uid="uid://grnaeqecjjbs"]
 
 [ext_resource type="Texture2D" uid="uid://cp7ok5egr4uau" path="res://Art/Screenshot 2025-03-14 224151.png" id="1_2kwn0"]
 [ext_resource type="Script" uid="uid://bmkhn7e50l0px" path="res://Scripts/level.gd" id="1_kkbwx"]
@@ -58,7 +54,7 @@ position = Vector2(-27, 54)
 position = Vector2(76, 25)
 
 [node name="PageUp3" parent="." instance=ExtResource("3_ch07b")]
-position = Vector2(46, 46)
+position = Vector2(44, 46)
 
 [node name="PageUp2" parent="." instance=ExtResource("3_ch07b")]
 position = Vector2(-6, 29)
@@ -74,7 +70,7 @@ scale = Vector2(0.197531, 0.017612)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="."]
-position = Vector2(46, 50)
+position = Vector2(57, 50.1129)
 scale = Vector2(0.197531, 0.0175197)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
@@ -134,7 +130,7 @@ scale = Vector2(0.00839499, -0.275757)
 texture = ExtResource("1_2kwn0")
 
 [node name="Sprite2D12" type="Sprite2D" parent="."]
-position = Vector2(46, 50)
+position = Vector2(44, 50)
 rotation = 1.5708
 scale = Vector2(0.00839499, -0.275757)
 texture = ExtResource("1_2kwn0")
