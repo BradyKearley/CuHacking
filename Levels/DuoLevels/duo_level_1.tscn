@@ -9,9 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://bj5fdduw12pty" path="res://Art/Screenshot 2025-03-15 005205.png" id="7_vnjql"]
 [ext_resource type="Texture2D" uid="uid://ceqdv3k3uhrs5" path="res://Art/Screenshot 2025-03-15 005557.png" id="8_5iy02"]
 [ext_resource type="Texture2D" uid="uid://pm3dq2qjyuyd" path="res://Art/Screenshot 2025-03-15 005637.png" id="9_f576x"]
-[ext_resource type="Script" uid="uid://bbhctmmtoogs3" path="res://Levels/x_button.gd" id="10_5lw08"]
-[ext_resource type="Script" uid="uid://cnsfjg8w2bsfx" path="res://Levels/_button.gd" id="11_3bhph"]
-[ext_resource type="Script" uid="uid://r2yeag2p3tsy" path="res://Levels/big_button.gd" id="12_c85xw"]
+[ext_resource type="Script" path="res://Levels/x_button.gd" id="10_5lw08"]
+[ext_resource type="Script" path="res://Levels/_button.gd" id="11_3bhph"]
+[ext_resource type="Script" path="res://Levels/big_button.gd" id="12_c85xw"]
 [ext_resource type="PackedScene" uid="uid://d23mfltklrsvc" path="res://Scenes/box.tscn" id="14_7eo3d"]
 [ext_resource type="PackedScene" uid="uid://8101w0wk1pjw" path="res://Player/player_2.tscn" id="15_o147k"]
 
@@ -161,8 +161,8 @@ scale = Vector2(0.00839499, -0.893881)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
-position = Vector2(11.4681, 48.7857)
-scale = Vector2(0.00839499, -0.568965)
+position = Vector2(11.4681, 46)
+scale = Vector2(0.00839499, -0.474138)
 polygon = PackedVector2Array(-40.5, -29, -40.5, 29, 40.5, 29, 40.5, -29)
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
