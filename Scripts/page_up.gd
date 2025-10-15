@@ -3,7 +3,7 @@ extends StaticBody2D
 # Set textures here maybe
 var actor: Node2D
 var disabled = false
-var jump_height = 300.0
+var jump_height = 1200.0
 
 func press(body: Node2D) -> void:
 	# Change if shift signal 

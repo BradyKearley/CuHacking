@@ -23,13 +23,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y7274"]
-size = Vector2(11, 8.5)
+size = Vector2(128, 100)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ego7h"]
-size = Vector2(4, 8)
+size = Vector2(18, 97)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2jyye"]
-size = Vector2(4, 8)
+size = Vector2(17, 95)
 
 [node name="Box" type="RigidBody2D" groups=["Movable"]]
 mass = 10.0
@@ -38,23 +38,22 @@ lock_rotation = true
 script = ExtResource("1_ego7h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.0859375, 0.0859375)
 sprite_frames = SubResource("SpriteFrames_y6vpp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1.25)
+position = Vector2(0, 14)
 shape = SubResource("RectangleShape2D_y7274")
 
 [node name="LeftCollider" type="Area2D" parent="."]
 
 [node name="LHitbox" type="CollisionShape2D" parent="LeftCollider"]
-position = Vector2(-4, 1)
+position = Vector2(-49, 13.5)
 shape = SubResource("RectangleShape2D_ego7h")
 
 [node name="RightCollider" type="Area2D" parent="."]
 
 [node name="RHitbox" type="CollisionShape2D" parent="RightCollider"]
-position = Vector2(4, 1)
+position = Vector2(47, 13)
 shape = SubResource("RectangleShape2D_2jyye")
 
 [connection signal="body_entered" from="LeftCollider" to="." method="_on_left_collider_body_entered"]

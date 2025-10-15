@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 80.0
-const JUMP_VELOCITY = -200.0
+const SPEED = 500.0
+const JUMP_VELOCITY = -800.0
 @onready var sprite = $AnimatedSprite2D # Ensure the AnimatedSprite2D node is named properly
 var facing_right = true # Track the player's facing direction
 var is_caps = false

@@ -5,13 +5,13 @@
 [ext_resource type="Texture2D" uid="uid://drvjpbvsh55ad" path="res://Art/Buttons/caps keycap button-Sheet.png" id="3_v5qbk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y4gkt"]
-size = Vector2(16, 7)
+size = Vector2(184, 62)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7125o"]
-size = Vector2(16, 8.875)
+size = Vector2(146, 19.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gvbd3"]
-size = Vector2(16, 25)
+size = Vector2(107, 118)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7125o"]
 atlas = ExtResource("3_v5qbk")
@@ -41,22 +41,23 @@ animations = [{
 }]
 
 [node name="CapsLock" type="StaticBody2D"]
+scale = Vector2(0.8, 1)
 script = ExtResource("1_7nnx7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.5)
+position = Vector2(8, 20)
 shape = SubResource("RectangleShape2D_y4gkt")
 
 [node name="Hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(0, -0.5625)
+position = Vector2(9, -6.0625)
 shape = SubResource("RectangleShape2D_7125o")
 
 [node name="Detector" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
-position = Vector2(0, -8.5)
+position = Vector2(0.5, -55)
 shape = SubResource("RectangleShape2D_gvbd3")
 
 [node name="Timer" type="Timer" parent="."]
@@ -68,7 +69,6 @@ stream = ExtResource("2_y4gkt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0.25, -3.875)
-scale = Vector2(0.0917969, 0.124023)
 sprite_frames = SubResource("SpriteFrames_7125o")
 animation = &"Up"
 

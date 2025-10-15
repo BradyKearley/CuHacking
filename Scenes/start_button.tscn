@@ -41,6 +41,8 @@ animations = [{
 }]
 
 [node name="Start Button" type="StaticBody2D"]
+position = Vector2(0, 26)
+scale = Vector2(8.065, 8.065)
 script = ExtResource("1_jmjxx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -5,13 +5,13 @@
 [ext_resource type="AudioStream" uid="uid://cosc81evi4ud" path="res://SFX/spacebar-click-keyboard-199448_iju6vpxH.mp3" id="3_62jh6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0pquk"]
-size = Vector2(23, 4)
+size = Vector2(17.857143, 4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fb30k"]
-size = Vector2(23, 5.875)
+size = Vector2(17.609125, 5.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_subnp"]
-size = Vector2(23, 10)
+size = Vector2(17.485119, 10)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qc302"]
 atlas = ExtResource("2_jqof2")
@@ -41,22 +41,24 @@ animations = [{
 }]
 
 [node name="CTRLZ" type="StaticBody2D"]
+position = Vector2(0, 26)
+scale = Vector2(8.064, 8.064)
 script = ExtResource("1_jqof2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.5)
+position = Vector2(0.24801587, -0.5)
 shape = SubResource("RectangleShape2D_0pquk")
 
 [node name="Hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(0, -0.5625)
+position = Vector2(0.12400746, -0.5625)
 shape = SubResource("RectangleShape2D_fb30k")
 
 [node name="Detector" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
-position = Vector2(0, -8.5)
+position = Vector2(0.062004086, -8.5)
 shape = SubResource("RectangleShape2D_subnp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://ca2uuh5a6p88i"]
 
-[ext_resource type="Script" uid="uid://bskit5dda8ys4" path="res://Scripts/end.gd" id="1_02kpm"]
+[ext_resource type="Script" path="res://Scripts/end.gd" id="1_02kpm"]
 [ext_resource type="AudioStream" uid="uid://cosc81evi4ud" path="res://SFX/spacebar-click-keyboard-199448_iju6vpxH.mp3" id="1_xmt8n"]
 [ext_resource type="Texture2D" uid="uid://burefjl17wwuw" path="res://Art/Buttons/new keycap button-Sheet.png" id="3_02kpm"]
 
@@ -41,6 +41,8 @@ animations = [{
 }]
 
 [node name="End" type="StaticBody2D"]
+position = Vector2(0, 26)
+scale = Vector2(8.065, 8.065)
 script = ExtResource("1_02kpm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
